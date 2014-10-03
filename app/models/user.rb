@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
-  has_many :responses
-  has_many :questioninstances, through: :responses
+  has_many :userresponses
+  has_many :questioninstances, through: :userresponses
 end

@@ -1,5 +1,5 @@
 class QuestionInstance < ActiveRecord::Base
   belongs_to :question
-  has_many :responses
-  has_many :users, through: :responses
+  has_many :userresponses
+  has_many :users, through: :userresponses
 end

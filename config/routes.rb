@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :responses
+  resources :user_responses
 
   resources :question_instances
 
