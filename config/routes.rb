@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :responses
+
   resources :question_instances
 
   resources :choices
