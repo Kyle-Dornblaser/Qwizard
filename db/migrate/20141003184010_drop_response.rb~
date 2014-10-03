@@ -1,0 +1,4 @@
+class DropResponse < ActiveRecord::Migration
+  def change
+  end
+end

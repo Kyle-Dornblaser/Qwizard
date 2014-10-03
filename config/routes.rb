@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
+  resources :questions
+
   resources :user_responses
 
   resources :question_instances
 
   resources :choices
-
-  resources :questions
 
   resources :difficulties
 

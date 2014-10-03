@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141003182919) do
+ActiveRecord::Schema.define(version: 20141003183750) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20141003182919) do
   add_index "question_instances", ["question_id"], name: "index_question_instances_on_question_id", using: :btree
 
   create_table "questions", force: true do |t|
-    t.integer  "type"
+    t.integer  "question_type"
     t.string   "question"
     t.integer  "attempts"
     t.integer  "difficulty_id"
@@ -50,18 +50,6 @@ ActiveRecord::Schema.define(version: 20141003182919) do
   end
 
   add_index "questions", ["difficulty_id"], name: "index_questions_on_difficulty_id", using: :btree
-
-  create_table "responses", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "questioninstance_id"
-    t.string   "response"
-    t.integer  "award"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "responses", ["questioninstance_id"], name: "index_responses_on_questioninstance_id", using: :btree
-  add_index "responses", ["user_id"], name: "index_responses_on_user_id", using: :btree
 
   create_table "user_responses", force: true do |t|
     t.integer  "user_id"

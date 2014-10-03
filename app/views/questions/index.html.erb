@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Type</th>
+      <th>Question type</th>
       <th>Question</th>
       <th>Attempts</th>
       <th>Difficulty</th>
@@ -14,7 +14,7 @@
   <tbody>
     <% @questions.each do |question| %>
       <tr>
-        <td><%= question.type %></td>
+        <td><%= question.question_type %></td>
         <td><%= question.question %></td>
         <td><%= question.attempts %></td>
         <td><%= question.difficulty %></td>
