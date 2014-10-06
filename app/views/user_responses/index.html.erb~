@@ -15,8 +15,8 @@
     <% @user_responses.each do |user_response| %>
       <tr>
         <td><%= user_response.user %></td>
-        <td><%= user_response.questioninstance %></td>  
-        <td><%= user_response.response %></td>      
+        <td><%= user_response.response %></td>
+        <td><%= user_response.questioninstance %></td>        
         <td><%= user_response.award %></td>
         <td><%= link_to 'Show', user_response %></td>
         <td><%= link_to 'Edit', edit_user_response_path(user_response) %></td>
