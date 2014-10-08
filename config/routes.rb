@@ -1,15 +1,27 @@
 Rails.application.routes.draw do
-  resources :questions
+  namespace :admin do
+    resources :user_responses
+  end
 
-  resources :user_responses
+  namespace :admin do
+    resources :question_instances
+  end
 
-  resources :question_instances
+  namespace :admin do
+    resources :choices
+  end
 
-  resources :choices
+  namespace :admin do
+    resources :questions
+  end
 
-  resources :difficulties
+  namespace :admin do
+    resources :users
+  end
 
-  resources :users
+  namespace :admin do
+    resources :difficulties
+  end
 
   resources :widgets
 

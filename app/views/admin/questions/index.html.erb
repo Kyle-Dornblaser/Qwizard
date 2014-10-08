@@ -1,0 +1,31 @@
+<h1>Listing admin_questions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question type</th>
+      <th>Question</th>
+      <th>Attempts</th>
+      <th>Difficulty</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_questions.each do |admin_question| %>
+      <tr>
+        <td><%= admin_question.question_type %></td>
+        <td><%= admin_question.question %></td>
+        <td><%= admin_question.attempts %></td>
+        <td><%= admin_question.difficulty %></td>
+        <td><%= link_to 'Show', admin_question %></td>
+        <td><%= link_to 'Edit', edit_admin_question_path(admin_question) %></td>
+        <td><%= link_to 'Destroy', admin_question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Question', new_admin_question_path %>

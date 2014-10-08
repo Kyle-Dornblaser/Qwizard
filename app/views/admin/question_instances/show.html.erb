@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @admin_question_instance.question %>
+</p>
+
+<%= link_to 'Edit', edit_admin_question_instance_path(@admin_question_instance) %> |
+<%= link_to 'Back', admin_question_instances_path %>

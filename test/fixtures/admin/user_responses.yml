@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  response: MyString
+  award: 1
+  question_instance_id: 
+  user_id: 
+
+two:
+  response: MyString
+  award: 1
+  question_instance_id: 
+  user_id: 
