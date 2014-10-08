@@ -5,6 +5,7 @@ class CreateAdminUsers < ActiveRecord::Migration
       t.string :password
       t.string :email
       t.string :avatar
+      t.string :role
 
       t.timestamps
     end

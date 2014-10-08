@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   namespace :admin do
+    resources :users
+  end
+
+  namespace :admin do
     resources :user_responses
   end
 
@@ -13,10 +17,6 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :questions
-  end
-
-  namespace :admin do
-    resources :users
   end
 
   namespace :admin do

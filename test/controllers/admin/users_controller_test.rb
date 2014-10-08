@@ -18,7 +18,7 @@ class Admin::UsersControllerTest < ActionController::TestCase
 
   test "should create admin_user" do
     assert_difference('Admin::User.count') do
-      post :create, admin_user: { avatar: @admin_user.avatar, email: @admin_user.email, password: @admin_user.password, username: @admin_user.username }
+      post :create, admin_user: { avatar: @admin_user.avatar, email: @admin_user.email, password: @admin_user.password, role: @admin_user.role, username: @admin_user.username }
     end
 
     assert_redirected_to admin_user_path(assigns(:admin_user))
@@ -35,7 +35,7 @@ class Admin::UsersControllerTest < ActionController::TestCase
   end
 
   test "should update admin_user" do
-    patch :update, id: @admin_user, admin_user: { avatar: @admin_user.avatar, email: @admin_user.email, password: @admin_user.password, username: @admin_user.username }
+    patch :update, id: @admin_user, admin_user: { avatar: @admin_user.avatar, email: @admin_user.email, password: @admin_user.password, role: @admin_user.role, username: @admin_user.username }
     assert_redirected_to admin_user_path(assigns(:admin_user))
   end
 
