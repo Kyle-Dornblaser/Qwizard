@@ -73,6 +73,62 @@ ActiveRecord::Schema.define(version: 20141008200739) do
     t.datetime "updated_at"
   end
 
+  create_table "choices", force: true do |t|
+    t.string   "choice"
+    t.boolean  "correct_choice"
+    t.integer  "question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "choices", ["question_id"], name: "index_choices_on_question_id", using: :btree
+
+  create_table "difficulties", force: true do |t|
+    t.integer  "points"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "question_instances", force: true do |t|
+    t.integer  "question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "question_instances", ["question_id"], name: "index_question_instances_on_question_id", using: :btree
+
+  create_table "questions", force: true do |t|
+    t.integer  "question_type"
+    t.string   "question"
+    t.integer  "attempts"
+    t.integer  "difficulty_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "questions", ["difficulty_id"], name: "index_questions_on_difficulty_id", using: :btree
+
+  create_table "user_responses", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "questioninstance_id"
+    t.string   "response"
+    t.integer  "award"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "user_responses", ["questioninstance_id"], name: "index_user_responses_on_questioninstance_id", using: :btree
+  add_index "user_responses", ["user_id"], name: "index_user_responses_on_user_id", using: :btree
+
+  create_table "users", force: true do |t|
+    t.string   "username"
+    t.string   "password"
+    t.string   "email"
+    t.string   "avatar"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "widgets", force: true do |t|
     t.string   "name"
     t.text     "description"
