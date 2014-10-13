@@ -26,9 +26,23 @@ class Admin::UserResponsesController < ApplicationController
   def create
     @admin_user_response = Admin::UserResponse.new(admin_user_response_params)
 
+    admin_choices = Admin::Choice.where(:question_id => @admin_user_response.question_instance.question_id)
+    correct_response = ''
+    admin_choices.each do |choice|
+      if choice.correct_choice
+        correct_response = choice
+      end
+    end
+
+    if @admin_user_response.response == correct_response.choice
+      asdfalsdfk = "Correct"
+    else 
+      asdfalsdfk = "Incorrect"
+    end
+
     respond_to do |format|
       if @admin_user_response.save
-        format.html { redirect_to @admin_user_response, notice: 'User response was successfully created.' }
+        format.html { redirect_to root_url, notice: asdfalsdfk }
         format.json { render :show, status: :created, location: @admin_user_response }
       else
         format.html { render :new }

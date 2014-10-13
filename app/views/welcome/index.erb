@@ -1,11 +1,14 @@
-<h1>Getting Started with Ruby</h1>
-
-<p>
-  Team Awesome!
-</p>
-
-<p>
-  Yay!!
-</p>
-
-<p>Nem Testing</p>
+<% currentQuestionInstance = getCurrentQuestionInstance %>
+<h1><%= currentQuestionInstance[:question].question %><h1>
+<% @admin_user_response = Admin::UserResponse.new %>
+<%= form_for @admin_user_response do |f| %>	
+	<% currentQuestionInstance[:choices].each do |choice| %>
+		<%= f.radio_button :response, choice.choice %> <%= choice.choice %>
+	<% end %>
+	<% if current_user %>
+		<input id="admin_user_response_user_id" name="admin_user_response[user_id]" type="hidden" value='<%= current_user.id %>' />
+	<% end %>
+		<input id="admin_user_response_question_instance_id" name="admin_user_response[question_instance_id]" type="hidden" value='<%= currentQuestionInstance[:questionInstance].id %>' />
+		<input id="admin_user_response_award" name="admin_user_response[award]" type="hidden" value="100" />
+	<%= f.submit %>
+<% end %>
