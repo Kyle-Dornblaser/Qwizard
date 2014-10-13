@@ -1,6 +1,7 @@
 class Admin::QuestionInstancesController < ApplicationController
   before_action :set_admin_question_instance, only: [:show, :edit, :update, :destroy]
 
+
   # GET /admin/question_instances
   # GET /admin/question_instances.json
   def index
