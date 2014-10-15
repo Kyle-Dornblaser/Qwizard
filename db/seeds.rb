@@ -9,6 +9,7 @@
 Admin::Difficulty.delete_all
 Admin::Question.delete_all
 Admin::Choice.delete_all
+Admin::QuestionInstance.delete_all
 
 Admin::Difficulty.create(id: 1, points: 100)
 Admin::Difficulty.create(id: 2, points: 1000)

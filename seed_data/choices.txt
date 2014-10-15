@@ -34,127 +34,367 @@ Tibet and India|false|9
 India and Nepal|false|9
 Bhutan and Nepal|false|9
 Tibet and Nepal|true|9
-Shara Desert|false|10
+Sahara Desert|false|10
 Arabian Desert|false|10
 Antarctic Desert|true|10
 Gobi Desert|false|10
-Bread|false|11
-Vegetables|false|11
-Meat|true|11
-Fruit|false|11
-Partially Hydrogenated Oils|false|12
-Hydrogenated Oils|false|12
-Processed Sugar|false|12
-All of the Above|true|12
-Broccoli|false|13
-Wheat|false|13
-Beef|true|13
-Beans|false|13
-It lowers cholesterol|false|14
-It regulates blood sugar|false|14
-Neither is true|false|14
-Both are true|true|14
-Whole fruit has more nutrients|false|15
-The fruit pulp is a great source of fiber|false|15
-Whole fruit has less calories and less sugar than a same size portion of juice|false|15
-All of the Above|true|15
-Obesity|false|16
-Cardiovascular Diseases|false|16
-Alzheimers|false|16
+Togo|false|11
+Congo|false|11
+Benin|true|11
+Gambia|false|11
+Jamaica|false|12
+Trinidad|false|12
+Cuba|false|12
+Haiti|true|12
+Gris Gris|true|13
+Tombstone|false|13
+Holy Water|false|13
+Crucifix|false|13
+Protestantism|false|14
+Catholicism|true|14
+Hinduism|false|14
+Buddhism|false|14
+Marie Laveau|true|15
+Rhoda Mereaux|false|15
+Rhonda Robicheaux|false|15
+Doris Warner|false|15
+One God|false|16
+Many Spirits|false|16
+Li Grand Zombi|false|16
 All of the Above|true|16
-Orange Juice|true|17
-Whole Grain Bread|false|17
-Rice|false|17
-Beans|false|17
-Nuts|false|18
-Fish|false|18
-Red Meat|true|18
-Chicken|false|18
-Trans Fat|true|19
-Monounsaturated Fat|false|19
-Polyunsaturated Fat|false|19
-None of the Above|false|19
-Olive Oil|false|20
-Palm Oil|true|20
-Nuts|false|20
-Corn Oil|false|20
-Togo|false|21
-Congo|false|21
-Benin|true|21
-Gambia|false|21
-Jamaica|false|22
-Trinidad|false|22
-Cuba|false|22
-Haiti|true|22
-Gris Gris|true|23
-Tombstone|false|23
-Holy Water|false|23
-Crucifix|false|23
-Protestantism|false|24
-Catholicism|true|24
-Hinduism|false|24
-Buddhism|false|24
-Marie Laveau|true|25
-Rhoda Mereaux|false|25
-Rhonda Robicheaux|false|25
-Doris Warner|false|25
-One God|false|26
-Many Spirits|false|26
-Li Grand Zombi|false|26
-All of the Above|true|26
-Bad Luck|false|27
-Legba|false|27
-Good Luck|true|27
-Death|false|27
-God|false|28
-Ancestors|false|28
-Lords|true|28
-Spirits|false|28
-1800|false|29
-1830|true|29
-1880|false|29
-1900|false|29
-White Zombie|true|30
-Serpent and the Rainbow|false|30
-Swamp Spirits|false|30
-The Doll of Death|false|30
-Virgo|false|31
-Scorpio|false|31
-Aries|true|31
-Taurus|false|31
-Gemini|false|32
-Libra|false|32
-Scorpio|false|32
-Leo|true|32
-Taurus|false|33
-Gemini|true|33
-Cancer|false|33
-Leo|false|33
-Sagittarius|true|34
-Ophiuchus|false|34
-Cancer|false|34
-Capricorn|false|34
-Fire Sign|false|35
-Water Sign|true|35
-Earth Sign|false|35
-Wind Sign|false|35
-Pisces|false|36
-Capricorn|false|36
-Aquarius|true|36
-Scorpio|false|36
-Aries|false|37
-Pisces|true|37
-Taurus|false|37
-Virgo|false|37
-Cancer|false|38
-Leo|false|38
-Virgo|false|38
-Scorpio|true|38
-Capricorn|true|39
-Aries|false|39
-Leo|false|39
-Libra|false|39
-Libra|false|40
-Leo|false|40
-Virgo|true|40
-Cancer|false|40
+Bad Luck|false|17
+Legba|false|17
+Good Luck|true|17
+Death|false|17
+God|false|18
+Ancestors|false|18
+Lords|true|18
+Spirits|false|18
+1800|false|19
+1830|true|19
+1880|false|19
+1900|false|19
+White Zombie|true|20
+Serpent and the Rainbow|false|20
+Swamp Spirits|false|20
+The Doll of Death|false|20
+1917|true|21
+1947|false|21
+1971|false|21
+1993|false|21
+1950s|false|22
+1960s|true|22
+1970s|false|22
+1980s|false|22
+Nobukazu Takeuchi|false|23
+Gichin Funokashi|false|23
+Jigaro Kano|false|23
+Osamu Tezuka|true|23
+1993|false|24
+1995|false|24
+1996|true|24
+1998|false|24
+Castle in the Sky|false|25
+Grave of the Fireflies|false|25
+Ghost in the Shell|false|25
+Fist of the North Star|true|25
+1997|false|26
+1999|false|26
+2000|true|26
+2001|false|26
+Samurai Junction|false|27
+Ninja Scroll|true|27
+Sword of Lightning|false|27
+Kenshiro|false|27
+Japanese Comics|true|28
+Animated TV Series|false|28
+Anime Action Titles|false|28
+None of the Above|false|28
+Kobe|false|29
+Kiai|false|29
+Akanabe|true|29
+Wasabi|false|29
+Cosplay|true|30
+Animessing|false|30
+Dressimesu|false|30
+Dressime|false|30
+1 billion years ago|false|31
+850 million years ago|false|31
+300 million years ago|false|31
+65 million years ago|true|31
+Spinosauriods|false|32
+Sauropods|true|32
+Ornithischians|false|32
+Pachycephalosaurians|false|32
+Tyrannosaurus|false|33
+Giganotosaurus|false|33
+Giraffatitan|true|33
+Spinosaurus|false|33
+Tyrannosaurus|false|34
+Wannanosaurus|false|34
+Argeninosaurus|false|34
+Spinosaurus|true|34
+20 feet|false|35
+7 feet|true|35
+13 feet|false|35
+35 feet|false|35
+150 feet|true|36
+300 feet|false|36
+35 feet|false|36
+70 feet|false|36
+South Africa|false|37
+East Asia|false|37
+North America|true|37
+South America|false|37
+North Africa|true|38
+Southeast Asia|false|38
+East Asia|false|38
+Northern Europe|false|38
+North America|false|39
+Eastern Europe|false|39
+South America|true|39
+South Africa|false|39
+Asteroid|true|40
+Nuclear Bomb|false|40
+Giant Volcano|false|40
+Food Shortages|false|40
+A Beautiful Mind|false|41
+Master and Commander|false|41
+L.A. Confidential|false|41
+Gladiator|true|41
+Russell Crowe|true|42
+Leonardo DiCaprio|false|42
+Tom Hanks|false|42
+Matt Damon|false|42
+Gangs of New York|false|43
+Catch Me If You Can|true|43
+Don's Plum|false|43
+The Beach|false|43
+Lord of the Rings: The Return of the King|true|44
+Lord of the Rings: The Fellowship of the Ring|false|44
+Chicago|false|44
+Million Dollar Baby|false|44
+Downfall|false|45
+Million Dollar Baby|false|45
+Eternal Sunshine of the Spotless Mind|true|45
+All the King's Men|false|45
+Charlize Theron|false|46
+Felicity Huffman|false|46
+Keira Knightley|false|46
+Reese Witherspoon|true|46
+Phone Booth|false|47
+The Marsh|false|47
+The Last King of Scotland|true|47
+Street Kings|false|47
+Syriana|false|48
+Michael Clayton|true|48
+Good Night, and Good Luck|false|48
+Ocean's Thirteen|false|48
+Terminator Salvation|false|49
+The Prestige|false|49
+I'm Not There|false|49
+The Dark Knight|true|49
+Precious|false|50
+The Blind Side|true|50
+The Last Station|false|50
+Julie &amp; Julie|false|50
+The Artist|false|51
+Midnight in Paris|false|51
+The Girl with the Dragon Tattoo|true|51
+Hugo|false|51
+X-Men: First Class|true|52
+Warrior|false|52
+Rise of the Planet of the Apes|false|52
+Mission Imposssible: Ghost Protocol|false|52
+Drive|false|53
+Vertigo|false|53
+Hugo|false|53
+The Artist|true|53
+Babel|false|54
+The Tree of Life|true|54
+Midnight in Paris|false|54
+Contagion|false|54
+The Girl with the Dragon Tattoo|false|55
+Midnight in Paris|true|55
+Hugo|false|55
+The Tree of Life|false|55
+Warrior|false|56
+Mission Impossible: Ghost Protocol|false|56
+X-Men: First Class|false|56
+Drive|true|56
+Contagion|false|57
+Warrior|true|57
+The Artist|false|57
+The Skin I Live In|false|57
+A Separation|false|58
+Melancholia|false|58
+Rise of the Planet of the Apes|true|58
+Contagion|false|58
+Weekend|false|59
+Mission Impossible: Ghost Protocol|true|59
+Into the Abyss|false|59
+Take Shelter|false|59
+Certified Copy|false|60
+Win Win|false|60
+Take Shelter|false|60
+Contagion|true|60
+Antisocial Personality Disorder|false|61
+Narcissistic Personality Disorder|false|61
+Avoidant Personality Disorder|true|61
+Schizoid Personality Disorder|false|61
+Schizoid Personality Disorder|true|62
+Antisocial Personality Disorder|false|62
+Narcissistic Personality Disorder|false|62
+Avoidant Personality Disorder|false|62
+Dependent Peronality Disorder|false|63
+Borderline Personality Disorder|true|63
+Schizotypal Personality Disorder|false|63
+Obsessive-compulsive Personality Disorder|false|63
+Schizoid Personality Disorder|false|64
+Narcissistic Personality Disorder|false|64
+Borderline Personality Disorder|false|64
+Schizotypal Personality Disorder|true|64
+Antisocial Personality Disorder|false|65
+Avoidant Personality Disorder|false|65
+Narcissistic Personality Disorder|true|65
+Paranoid Personality Disorder|false|65
+Histrionic Personality Disorder|true|66
+Narcissistic Personality Disorder|false|66
+Schizoid Personality Disorder|false|66
+Obsessive-compulsive Personality Disorder|false|66
+Narcissistic Personality Disorder|false|67
+Obsessive-compulsive Personality Disorder|true|67
+Dependent Personality Disorder|false|67
+Schizotypal Personality Disorder|false|67
+Obsessive-compulsive Personality Disorder|false|68
+Antisoial Personality Disorder|false|68
+Paranoid Personality Disorder|true|68
+Histrionic Personality Disorder|false|68
+Borderline Personality Disorder|false|69
+Narcissistic Personality Disorder|false|69
+Avoidant Personality Disorder|false|69
+Antisocial Personality Disorder|true|69
+Histrionic Personality Disorder|false|70
+Dependent Personality Disorder|true|70
+Obsessive-compulsive Personality Disorder|false|70
+Borderline Personality Disorder|false|70
+1492|false|71
+1675|false|71
+1776|true|71
+1783|false|71
+13|true|72
+15|false|72
+27|false|72
+50|false|72
+Spain|false|73
+France|true|73
+Austria|false|73
+Italy|false|73
+1678|false|74
+1733|false|74
+1789|true|74
+1806|false|74
+1775|false|75
+1809|false|75
+1852|false|75
+1861|true|75
+1848|false|76
+1910|false|76
+1920|true|76
+1939|false|76
+1899|false|77
+1908|false|77
+1917|true|77
+1921|false|77
+1908|false|78
+1929|true|78
+1933|false|78
+1939|false|78
+1928|false|79
+1935|false|79
+1939|false|79
+1941|true|79
+1999|false|80
+2001|true|80
+2003|false|80
+2005|false|80
+808 BC|false|81
+632 BC|false|81
+509 BC|true|81
+127 AD|false|81
+472 BC|false|82
+224 BC|false|82
+283 AD|false|82
+313 AD|true|82
+Buddhists|false|83
+Muslims|true|83
+Pagans|false|83
+Hindus|false|83
+1349|true|84
+1456|false|84
+1463|false|84
+1512|false|84
+12th Century|false|85
+13th Century|false|85
+14th Century|true|85
+15th Century|false|85
+1425|false|86
+1498|false|86
+1517|true|86
+1583|false|86
+16th|false|87
+17th|false|87
+18th|true|87
+19th|false|87
+1914|true|88
+1929|false|88
+1934|false|88
+1935|false|88
+Germany|false|89
+Poland|true|89
+Austria|false|89
+France|false|89
+1975|false|90
+1985|false|90
+1988|false|90
+1991|true|90
+2500 to 2000 BC|false|91
+2200 to 1800 BC|false|91
+1700 to 1050 BC|true|91
+800 to 600 BC|false|91
+1023 to 947 BC|false|92
+662 to 510 BC|false|92
+550 to 325 BC|false|92
+476 to 221 BC|true|92
+2000 to 1850 BC|false|93
+1459 to 1110 BC|false|93
+204 to 278 AD|false|93
+538 to 710 AD|true|93
+1185 to 1333|true|94
+845 to 1129|false|94
+596 to 883|false|94
+387 to 572|false|94
+1852|false|95
+1894|true|95
+1940|false|95
+1968|false|95
+Portugal|true|96
+England|false|96
+France|false|96
+Spain|false|96
+1867|false|97
+1898|false|97
+1923|false|97
+1957|true|97
+America|false|98
+Japan|false|98
+France|true|98
+China|false|98
+Red Army|false|99
+Khmer Rouge|true|99
+Viet Minh|false|99
+Cambodian Nationalists|false|99
+Laos|false|100
+Burma|false|100
+Thailand|true|100
+Indonesia|false|100

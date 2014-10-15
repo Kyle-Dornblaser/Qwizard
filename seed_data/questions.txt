@@ -8,16 +8,6 @@
 1|Which country has the largest population in the world?|2|1
 1|The highest mountain in the world, Mt. Everest, is located on the border of which two countries?|2|1
 1|What is the largest desert in the world?|2|1
-1|What food group has the highest levels of protein?|2|1
-1|Which of the following ingredients are bad for your health?|2|1
-1|Fiber should be an important part of your diet. Which of the foods below does not contain fiber?|2|1
-1|There are two types of fiber, soluble and insoluble. Which is true of soluble fiber?|2|1
-1|Eating a piece of fruit is far better than drinking fruit juice because:|2|1
-1|Refined sugar increases your risk for which of the following?|2|1
-1|Carbohydrates are very important for a healthy diet. Which of the following carbohydrate rich foods is the least healthy?|2|1
-1|What source of protein should you eat the least of?|2|1
-1|Your body needs fat to be healthy. But which type of fat should be avoided at all costs?|2|1
-1|Which of the ingredients below contains mostly unhealthy fat?|2|1
 1|Louisiana Voodoo, also known as New Orleans Voodoo, has its roots in which African country?|2|1
 1|Another major source of Voodoo in Louisiana was?|2|1
 1|What is one of the most important items in New Orleans Voodoo?|2|1
@@ -28,13 +18,83 @@
 1|Which of the choices below is not worshiped in Voodoo?|2|1
 1|The Creole Phase of New Orleans Voodoo began around which year?|2|1
 1|Which 1932 movie made Voodoo extremely popular on the tourist circuit in New Orleans?|2|1
-1|What is the first astrological sign in the Zodiac?|2|1
-1|Which sign is considered to be masculine, and compatible with Aries and Sagittarius?|2|1
-1|Which sign falls between May 21 and June 20 on the Tropical Zodiac?|2|1
-1|What is the 9th astrological sign in the Zodiac, known for adaptability?|2|1
-1|Cancer is considered to be a:|2|1
-1|Which sign falls between January 21 and February 19 on the Tropical Zodiac?|2|1
-1|Which sign has the fish as a symbol?|2|1
-1|Which sign is considered to have the qualities of femininity and be introverted?|2|1
-1|What is the 10th astrological sign in the Zodiac, compatible with Taurus and Virgo?|2|1
-1|Which sign falls between August 23 and September 22 on the Tropical Zodiac?|2|1
+1|Anime is an abbreviation for the term animation. When was the first known Japanese animation produced?|2|1
+1|In which decade was anime resembling the current style developed?|2|1
+1|Who was the first Japanese producer to create characters with the characteristic large eyes?|2|1
+1|Pokemon, one of the most popular and well known anime characters, was created by Stoshi Tajiri in which year?|2|1
+1|Which hit Anime film premiered in Japan in 1996, starring Kenshiro as the main character?|2|1
+1|Which year was the American adaptation of Digimon: The Movie released?|2|1
+1|Which 1993 anime hit set in Feudal Japan involved the Yamashiro Clan?|2|1
+1|Manga is another term used for anime, but often more specifically refers to what?|2|1
+1|It's common in anime for a character to pull their lower eyelid down to taunt someone. What is this called?|2|1
+1|The practice of dressing up like anime characters in Japan is called?|2|1
+1|When was the last time that dinosaurs romed the earth?|2|1
+1|The largest dinosaurs were the:|2|1
+1|Which dinosaur is not a meat eater?|2|1
+1|The largest meat eating dinosaur was the:|2|1
+1|How long did adult Velociraptors grow to?|2|1
+1|The Amphicoelias could grow up to how long?|2|1
+1|In which region did the Tyrannosaurus roam?|2|1
+1|In which region did the Spinosaurus roam?|2|1
+1|In what region did the Giganotosaurus roam?|2|1
+1|The extinction of the dinosaurs is most commonly believed to have been cause by what event?|2|1
+1|Which 2000 movie staring Russell Crowe won Oscars for Best Picture and Best Actor?|2|1
+1|Which actor stared in the 2001 Best Picture film about a mathematician?|2|1
+1|What was one of the top movies of 2002, starring Leonardo DiCaprio and Tom Hanks?|2|1
+1|Which movie won the Oscar for Best Picture in 2003?|2|1
+1|Which very popular movie in 2004 did Kate Winslet star in?|2|1
+1|Which actress won the Academy Award for Best Actress in 2005 for her role in <i>Walk the Line</i>?|2|1
+1|In 2006, Forest Whitaker won Best Actor for which popular movie?|2|1
+1|Which top 2007 movie starred George Clooney?|2|1
+1|Which top 2008 movie starred Christian Bale?|2|1
+1|An actress in which movie won the Academy Award for Best Actress in 2009?|2|1
+1|Which movie below was an American film version of a popular Swedish novel (and also a 2009 Swedish film)?|2|1
+1|This movie is based on a Marvel Comics series, featuring the young Charles Xavier:|2|1
+1|This highly acclaimed, silent black and white film was made in France:|2|1
+1|Which 2011 film below stared Brad Pitt and Sean Penn?|2|1
+1|This popular 2011 movie was directed by Woody Allen:|2|1
+1|Which movie below stared Ryan Gosling?|2|1
+1|Which film stared Nick Nolte as the father of two estranged brothers?|2|1
+1|This film was based on a biotech company's experiment gone wrong:|2|1
+1|This movie included scenes filmed at the Burj Khalifa in Dubai:|2|1
+1|Which popular 2011 movie starred both Matt Damon and Jude Law?|2|1
+1|Which personality disorder is characterized by feelings of inadequcy and extreme fear of being disliked or humiliated?|2|1
+1|Which personality disorder is characterized by elaborate personal fantasies and a complete lack of desire to maintain relationships?|2|1
+1|Which personality disorder is characterized by extreme mood changes, unstable relationships, and periods of dissociation?|2|1
+1|Which personality disorder is characterized by very strange thinking and behavoir along with uncommon beliefs?|2|1
+1|Which personality disorder is characterized by excessive thoughts personal power, vanity, and image?|2|1
+1|Which personality disorder is characterized by a strong need for approval along with inappropriate seductive behavior?|2|1
+1|Which personality disorder is characterized by an extreme desire for order, perfection, and control?|2|1
+1|Which personality disorder is characterized by extreme suspicion of others?|2|1
+1|Which personality disorder is characterized by a pattern of disregard for and violation of the rights of others?|2|1
+1|Which personality disorder is characterized by an extreme dependence on others?|2|1
+1|In what year was the Declaration of Independence written?|2|1
+1|At the time of the Declaration of Independence, how many "colonies" existed in the newly formed United States?|2|1
+1|Which country gave the colonies support against the British?|2|1
+1|Which year was the US Constitution written?|2|1
+1|In which year were the Confederate States of America formed to allow the continued use of slavery in the South?|2|1
+1|In what year were women given the right to vote in the United States?|2|1
+1|In which year did the United States enter World War I?|2|1
+1|In what year did the Great Depression begin?|2|1
+1|In which year did Japan attack the United States, leading to American entry into World War II?|2|1
+1|In which year was the War on Terror declared?|2|1
+1|In what year was the Roman Republic created?|2|1
+1|In which year did Constantine I move the capital of the Roman Republic from Rome to Constantinople?|2|1
+1|The Crusades, between 11th and 13th Centuries, were primarily Catholics attempting to purge which religious group?|2|1
+1|Around which year did the Black Death wipe out 30 to 60% of Europe?|2|1
+1|In which century did the Renaissance begin, spreading knowledge from Florence throughout Europe?|2|1
+1|When did the Protestant Reformation begin, challenging the authority of the Catholic Church?|2|1
+1|In which century did the Industrial Revolution begin?|2|1
+1|In which year did World War I begin?|2|1
+1|Adolf Hitler began World War II by attacking which country in 1939?|2|1
+1|The collapse of the Iron Curtain occured in?|2|1
+1|The oldest written Chinese documents date back to the Shang Dynasty in which period?|2|1
+1|China's great Dynasties began to break up during the Warring States peiod.  When was the Warring States Period?|2|1
+1|It was during the Asuka period that Japan became a recognizable state. When was this period?|2|1
+1|The feudal period of Japan began with the Kamakrua period, when state control was decentralized and ruled by various lords called daimyo. When was this period?|2|1
+1|The Meiji Restoratio or Meiji period in Japan marked the end of feudal society, the advent of nationalism, and the invasion of several countries. In what year during the Meiji period did Japan first invade China?|2|1
+1|The first European country to colonize Southeast Asia was?|2|1
+1|In which year did Malaysia gain independence from Britain?|2|1
+1|The Vietnamese began a war for independence in 1946 against which country?|2|1
+1|Cambodia in 1975 was taken over by which group led by Pol Pot, leading to the rise of the 'Killing Fields'?|2|1
+1|Which country in Southeast Asia was the only country never colonised?|2|1
