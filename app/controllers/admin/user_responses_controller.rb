@@ -41,8 +41,10 @@ class Admin::UserResponsesController < ApplicationController
         end
 
         if @admin_user_response.response == correct_response.choice
+          @admin_user_response.award = 1
           msg = "Correct"
         else 
+          @admin_user_response.award = 0
           msg = "Incorrect"
         end
 

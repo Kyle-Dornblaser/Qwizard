@@ -29,7 +29,7 @@ class Admin::UserResponsesController < ApplicationController
     if @admin_user_response.user == nil
         @admin_user_response.destroy
         respond_to do |format|
-            format.html { redirect_to signup_url, notice: "Not logged in" }
+            format.html { redirect_to signup_url, notice: "Must be logged in participate" }
         end
     else
         admin_choices = Admin::Choice.where(:question_id => @admin_user_response.question_instance.question_id)
