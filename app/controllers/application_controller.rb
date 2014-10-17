@@ -7,29 +7,29 @@ class ApplicationController < ActionController::Base
   private
 
   def current_user
-    @current_users ||= Admin::User.find(session[:user_id]) if session[:user_id]
+    @current_users ||= User.find(session[:user_id]) if session[:user_id]
   end
 
    def getCurrentQuestionInstance
     # For the prototype, the current question instance will always create a new question instance
-    admin_question_instance = Admin::QuestionInstance.new
-    randomQuestionId = Random.rand(Admin::Question.count) + 1
-    admin_question_instance.question_id = randomQuestionId
-    admin_question_instance.save
-    admin_question = Admin::Question.find(admin_question_instance.question_id)
-    admin_choices = Admin::Choice.where(:question_id => admin_question.id)
+    question_instance = QuestionInstance.new
+    randomQuestionId = Random.rand(Question.count) + 1
+    question_instance.question_id = randomQuestionId
+    question_instance.save
+    question = Question.find(question_instance.question_id)
+    choices = Choice.where(:question_id => question.id)
 
     @currentQuestionInstance = {
-    	questionInstance: admin_question_instance,
-    	question: admin_question,
-    	choices: admin_choices
+    	questionInstance: question_instance,
+    	question: question,
+    	choices: choices
     }
   end
   
   def percentage_correct
     
-    correct = Admin::UserResponse.where("user_id =" + current_user.id.to_s).where("award > 0").count
-    total = Admin::UserResponse.where("user_id =" + current_user.id.to_s).count
+    correct = UserResponse.where("user_id =" + current_user.id.to_s).where("award > 0").count
+    total = UserResponse.where("user_id =" + current_user.id.to_s).count
     if (total == 0)
         percentage = 100
     else

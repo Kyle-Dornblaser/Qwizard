@@ -2,18 +2,18 @@
 
 <div class="col-md-8 col-md-offset-2">
     <h1><%= currentQuestionInstance[:question].question %></h1>
-    <% @admin_user_response = Admin::UserResponse.new %>
-    <%= form_for @admin_user_response do |f| %>	
+    <% @user_response = UserResponse.new %>
+    <%= form_for @user_response do |f| %>	
         <div class="form-group" style="padding-left: 25px">
 	        <% currentQuestionInstance[:choices].each do |choice| %>
 		        <div class="radio"><%= f.radio_button :response, choice.choice %> <%= choice.choice %></div>
 	        <% end %>
 	    </div>
         <% if current_user %>
-	        <input id="admin_user_response_user_id" name="admin_user_response[user_id]" type="hidden" value='<%= current_user.id %>' />
+	        <input id="user_response_user_id" name="user_response[user_id]" type="hidden" value='<%= current_user.id %>' />
         <% end %>
-	    <input id="admin_user_response_question_instance_id" name="admin_user_response[question_instance_id]" type="hidden" value='<%= currentQuestionInstance[:questionInstance].id %>' />
-	    <input id="admin_user_response_award" name="admin_user_response[award]" type="hidden" value="100" />
+	    <input id="user_response_question_instance_id" name="user_response[question_instance_id]" type="hidden" value='<%= currentQuestionInstance[:questionInstance].id %>' />
+	    <input id="user_response_award" name="user_response[award]" type="hidden" value="100" />
 		<div class="form-group">
 	        <%= f.submit 'Submit', :class => "btn btn-primary" %>
 	    </div>

@@ -1,30 +1,38 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
 
-  namespace :admin do
-    resources :users
+  resources :user_responses
+
+  resources :question_instances
+
+  resources :choices
+
+  resources :questions
+
+  resources :users
+
+  scope '/admin' do
+    scope '/difficulties' do
+      get '/', to: 'difficulties#index', as: 'difficulties'
+      get '/new', to: 'difficulties#new', as: 'new_difficulty'
+      post '/', to: 'difficulties#create', as: 'create_difficulty'
+      get '/:id', to: 'difficulties#show', as: 'difficulty'
+      put '/:id', to: 'difficulties#update', as: 'update_difficulty'
+      delete '/:id', to: 'difficulties#destroy', as: 'destroy_difficulty'
+      get '/:id/edit', to: 'difficulties#edit', as: 'edit_difficulty'
+    end
+    scope '/users' do
+      get '/', to: 'users#index', as: 'users'
+      get '/new', to: 'users#new', as: 'new_user'
+      post '/', to: 'users#create', as: 'create_user'
+      get '/:id', to: 'users#show', as: 'user'
+      put '/:id', to: 'users#update', as: 'update_user'
+      delete '/:id', to: 'users#destroy', as: 'destroy_user'
+      get '/:id/edit', to: 'users#edit', as: 'edit_user'
+    end
   end
 
-  namespace :admin do
-    resources :user_responses
-  end
-
-  namespace :admin do
-    resources :question_instances
-  end
-
-  namespace :admin do
-    resources :choices
-  end
-
-  namespace :admin do
-    resources :questions
-  end
-
-  namespace :admin do
-    resources :difficulties
-  end
-
+  get "signup", to: "admin/users#new", as: "signup"
+  
   resources :widgets
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -34,11 +42,9 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-get "logout" => "sessions#destroy", :as => "logout"
-get "login" => "sessions#new", :as => "login"
-get "signup" => "users#new", :as => "signup"
-root :to => "users#new"
-resources :users
+get "logout", to: "sessions#destroy", as: "logout"
+get "login", to: "sessions#new", as: "login"
+
 resources :sessions
 
 end

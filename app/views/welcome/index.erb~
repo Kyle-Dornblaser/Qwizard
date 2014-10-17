@@ -4,7 +4,7 @@
     <h1><%= currentQuestionInstance[:question].question %></h1>
     <% @admin_user_response = Admin::UserResponse.new %>
     <%= form_for @admin_user_response do |f| %>	
-        <div class="form-group" style="padding-left: 10px">
+        <div class="form-group" style="padding-left: 25px">
 	        <% currentQuestionInstance[:choices].each do |choice| %>
 		        <div class="radio"><%= f.radio_button :response, choice.choice %> <%= choice.choice %></div>
 	        <% end %>
