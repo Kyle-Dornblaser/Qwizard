@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+<h1> <%= current_user.username %> Profile </h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pull-left"> 
+              <%= link_to "Home", root_path %>
+            </div>
+            <div class="pull-right">
+              <% if current_user %>
+                (<%= percentage_correct %>% Correct)
+                Logged in as <%= current_user.email %>.
+                <%= link_to "Log out", logout_path %>
+              <% else %>
+                <%= link_to "Sign up", signup_path %> or
+                <%= link_to "log in", login_path %>
+              <% end %>
+            </div>
+        </div>
+    </div>
+
+    <% flash.each do |name, msg| %>
+    <div class="alert alert-dismissable alert-info">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <%= content_tag :span, msg, :id => "flash_#{name}" %>
+    </div>
+    <% end %>
+
+    <%= yield %>
+
+</div>
+
+<% if current_user %>
+<% userResponses = getUserResponses%>
+<div id="user_responses" class="container">
+    <div class="row">
+        <div class="col-md-4">Question</div>
+        <div class="col-md-4">Response</div>
+        <div class="col-md-4">Points Achieved</div>
+    </div>
+    <% userResponses[:responses].each do |user_response| %>
+    <div class="row">
+        <div class="col-md-4"><%= user_response.question_instance.question.question %></div>
+        <div class="col-md-4"><%= user_response.response %></div>
+        <div class="col-md-4"><%= user_response.award %></div>
+    </div>
+    <% end %>  
+</div>
+<% end %>
+
+</body>
+</html>
