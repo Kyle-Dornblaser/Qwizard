@@ -3,7 +3,7 @@
 <div class="col-md-8 col-md-offset-2">
     <h1><%= currentQuestionInstance[:question].question %></h1>
     <% @user_response = UserResponse.new %>
-    <%= form_for @user_response do |f| %>	
+    <%= form_for @user_response, :url => evaluate_response_path, :method => :post do |f| %>
         <div class="form-group" style="padding-left: 25px">
 	        <% currentQuestionInstance[:choices].each do |choice| %>
 		        <div class="radio"><%= f.radio_button :response, choice.choice %> <%= choice.choice %></div>

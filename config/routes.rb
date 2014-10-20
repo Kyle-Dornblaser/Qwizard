@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  post '/signup', to: 'users#create', as: 'signup_create'
+  post '/evaluate_response', to: 'user_responses#evaluateResponse', as: 'evaluate_response'
+
   scope '/admin' do
     scope '/difficulties' do
       get '/', to: 'difficulties#index', as: 'difficulties'
@@ -56,8 +59,6 @@ Rails.application.routes.draw do
       get '/:id/edit', to: 'user_responses#edit', as: 'edit_user_response'
     end
   end
-
-  get "signup", to: "admin/users#new", as: "signup"
   
   resources :widgets
 
@@ -70,6 +71,7 @@ Rails.application.routes.draw do
 
 get "logout", to: "sessions#destroy", as: "logout"
 get "login", to: "sessions#new", as: "login"
+get "signup", to: "users#signup", as: "signup"
 
 resources :sessions
 

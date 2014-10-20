@@ -61,6 +61,45 @@ class UserResponsesController < ApplicationController
     end
   end
 
+  # POST /evaluate_response
+  def evaluateResponse
+    @user_response = UserResponse.new(user_response_params)
+
+    # TODO Refactor into logged in check method
+    if @user_response.user == nil
+      @user_response.destroy
+      respond_to do |format|
+        format.html { redirect_to signup_url, notice: "Must be logged in participate" }
+      end
+    else
+      # TODO Get question type and have the method for that question type evaluate the response
+      choices = Choice.where(:question_id => @user_response.question_instance.question_id)
+      correct_response = ''
+      choices.each do |choice|
+        if choice.correct_choice
+          correct_response = choice
+        end
+      end
+      if @user_response.response == correct_response.choice
+        @user_response.award = 1
+        msg = "Correct"
+      else
+        @user_response.award = 0
+        msg = "Incorrect"
+      end
+
+      respond_to do |format|
+        if @user_response.save
+          format.html { redirect_to root_url, notice: msg }
+          format.json { render :show, status: :created, location: @user_response }
+        else
+          format.html { render :new }
+          format.json { render json: @user_response.errors, status: :unprocessable_entity }
+        end
+      end
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user_response
