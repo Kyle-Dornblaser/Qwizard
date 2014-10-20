@@ -72,3 +72,4 @@ class QuestionInstancesController < ApplicationController
       params.require(:question_instance).permit(:question_id)
     end
 end
+

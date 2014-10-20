@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   post '/signup', to: 'users#create', as: 'signup_create'
   post '/evaluate_response', to: 'user_responses#evaluateResponse', as: 'evaluate_response'
+  root 'welcome#index'
 
   scope '/admin' do
     scope '/difficulties' do
@@ -67,7 +68,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  root 'welcome#index'
+
 
 get "logout", to: "sessions#destroy", as: "logout"
 get "login", to: "sessions#new", as: "login"
