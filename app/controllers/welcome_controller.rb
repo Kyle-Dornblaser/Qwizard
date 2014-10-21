@@ -16,8 +16,11 @@ class WelcomeController < ApplicationController
     }
     if (question_type == 1)
       render "multiple_choice"
+    elsif (question_type == 2)
+      render "multiple_select"
+    elsif (question_type == 3)
+      render "short_answer"
     end
-
 
   end
 
