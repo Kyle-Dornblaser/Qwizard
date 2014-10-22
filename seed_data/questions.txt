@@ -13,7 +13,7 @@
 1|What is one of the most important items in New Orleans Voodoo?|2|1
 1|Many practices from which religion were incorporated into New Orleans Voodoo?|2|1
 1|Who was one of the most famous Voodoo Queens of New Orleans, still revered to this day?|2|1
-1|Followers of Louisiana Voodoo believe in:|2|1
+1|Followers of Louisiana Voodoo believe in which of the following?|2|1
 1|Voodoo and Hoodoo (traditional African folk magic) have mixed in New Orleans. What is a lock of female hair supposed to bring?|2|1
 1|Which of the choices below is not worshiped in Voodoo?|2|1
 1|The Creole Phase of New Orleans Voodoo began around which year?|2|1
@@ -29,9 +29,9 @@
 1|It's common in anime for a character to pull their lower eyelid down to taunt someone. What is this called?|2|1
 1|The practice of dressing up like anime characters in Japan is called?|2|1
 1|When was the last time that dinosaurs romed the earth?|2|1
-1|The largest dinosaurs were the:|2|1
+1|The largest dinosaurs were the|2|1
 1|Which dinosaur is not a meat eater?|2|1
-1|The largest meat eating dinosaur was the:|2|1
+1|The largest meat eating dinosaur was the|2|1
 1|How long did adult Velociraptors grow to?|2|1
 1|The Amphicoelias could grow up to how long?|2|1
 1|In which region did the Tyrannosaurus roam?|2|1
@@ -43,20 +43,20 @@
 1|What was one of the top movies of 2002, starring Leonardo DiCaprio and Tom Hanks?|2|1
 1|Which movie won the Oscar for Best Picture in 2003?|2|1
 1|Which very popular movie in 2004 did Kate Winslet star in?|2|1
-1|Which actress won the Academy Award for Best Actress in 2005 for her role in <i>Walk the Line</i>?|2|1
+1|Which actress won the Academy Award for Best Actress in 2005 for her role in Walk the Line?|2|1
 1|In 2006, Forest Whitaker won Best Actor for which popular movie?|2|1
 1|Which top 2007 movie starred George Clooney?|2|1
 1|Which top 2008 movie starred Christian Bale?|2|1
 1|An actress in which movie won the Academy Award for Best Actress in 2009?|2|1
 1|Which movie below was an American film version of a popular Swedish novel (and also a 2009 Swedish film)?|2|1
-1|This movie is based on a Marvel Comics series, featuring the young Charles Xavier:|2|1
-1|This highly acclaimed, silent black and white film was made in France:|2|1
+1|This movie is based on a Marvel Comics series, featuring the young Charles Xavier|2|1
+1|This highly acclaimed, silent black and white film was made in France|2|1
 1|Which 2011 film below stared Brad Pitt and Sean Penn?|2|1
-1|This popular 2011 movie was directed by Woody Allen:|2|1
+1|This popular 2011 movie was directed by Woody Allen|2|1
 1|Which movie below stared Ryan Gosling?|2|1
 1|Which film stared Nick Nolte as the father of two estranged brothers?|2|1
-1|This film was based on a biotech company's experiment gone wrong:|2|1
-1|This movie included scenes filmed at the Burj Khalifa in Dubai:|2|1
+1|This film was based on a biotech company's experiment gone wrong|2|1
+1|This movie included scenes filmed at the Burj Khalifa in Dubai|2|1
 1|Which popular 2011 movie starred both Matt Damon and Jude Law?|2|1
 1|Which personality disorder is characterized by feelings of inadequcy and extreme fear of being disliked or humiliated?|2|1
 1|Which personality disorder is characterized by elaborate personal fantasies and a complete lack of desire to maintain relationships?|2|1
