@@ -43,7 +43,7 @@
 1|What was one of the top movies of 2002, starring Leonardo DiCaprio and Tom Hanks?|2|1
 1|Which movie won the Oscar for Best Picture in 2003?|2|1
 1|Which very popular movie in 2004 did Kate Winslet star in?|2|1
-1|Which actress won the Academy Award for Best Actress in 2005 for her role in <i>Walk the Line</i>?|2|1
+1|Which actress won the Academy Award for Best Actress in 2005 for her role in Walk the Line?|2|1
 1|In 2006, Forest Whitaker won Best Actor for which popular movie?|2|1
 1|Which top 2007 movie starred George Clooney?|2|1
 1|Which top 2008 movie starred Christian Bale?|2|1
