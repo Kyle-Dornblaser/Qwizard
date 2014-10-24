@@ -73,7 +73,7 @@ Rails.application.routes.draw do
 get "logout", to: "sessions#destroy", as: "logout"
 get "login", to: "sessions#new", as: "login"
 get "signup", to: "users#signup", as: "signup"
-get "profile", to: "profile#show", as: "profile"
+get "profile", to: "profile#index", as: "profile"
 
 resources :sessions
 

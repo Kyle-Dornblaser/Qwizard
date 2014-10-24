@@ -2,6 +2,9 @@ class WelcomeController < ApplicationController
 
   # GET /welcome
   def index
+    if QuestionInstance.count(:all) == 0
+        getCurrentQuestionInstance
+    end
     question_instance = QuestionInstance.last
     # TODO Refactor question type code
     question = Question.find(question_instance.question_id)
@@ -14,11 +17,11 @@ class WelcomeController < ApplicationController
         question: question,
         choices: choices
     }
-    if (question_type == 3)
+    if (question_type == 1)
       render "multiple_choice"
     elsif (question_type == 2)
       render "multiple_select"
-    elsif (question_type == 1)
+    elsif (question_type == 3)
       render "short_answer"
     end
 

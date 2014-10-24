@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Profile</title>
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<div class="container">
+<% if current_user %>
 <h1> <%= current_user.username %> Profile </h1>
+<% end %>
 
+<div class="container">
     <% flash.each do |name, msg| %>
     <div class="alert alert-dismissable alert-info">
       <button type="button" class="close" data-dismiss="alert">×</button>
@@ -37,9 +28,6 @@
         <div class="col-md-4"><%= user_response.response %></div>
         <div class="col-md-4"><%= user_response.award %></div>
     </div>
-    <% end %>  
+<% end %>  
 </div>
 <% end %>
-
-</body>
-</html>

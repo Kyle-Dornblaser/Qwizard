@@ -2,6 +2,9 @@ class WelcomeController < ApplicationController
 
   # GET /welcome
   def index
+    if QuestionInstance.count(:all) == 0
+        getCurrentQuestionInstance
+    end
     question_instance = QuestionInstance.last
     # TODO Refactor question type code
     question = Question.find(question_instance.question_id)

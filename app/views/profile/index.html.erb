@@ -1,20 +1,15 @@
 <% if current_user %>
-<h1> <%= current_user.username %> Profile </h1>
+<h2> <%= (current_user.username).capitalize %>'s Profile </h2>
 <% end %>
-<div class="container">
-    <% flash.each do |name, msg| %>
-    <div class="alert alert-dismissable alert-info">
-      <button type="button" class="close" data-dismiss="alert">×</button>
-      <%= content_tag :span, msg, :id => "flash_#{name}" %>
-    </div>
-    <% end %>
-
-    <%= yield %>
-
-</div>
 
 <% if current_user %>
-<% userResponses = getUserResponses%>
+<h3> Overall Statistics </h3>
+
+Correct Responses: <%= UserResponse.where("user_id =" + current_user.id.to_s).where("award > 0").count %> <br/>
+Total Responses: <%= UserResponse.where("user_id =" + current_user.id.to_s).count %>
+
+<h3> Your Responses </h3>
+<% userResponses = getUserResponses %>
 <div id="user_responses" class="container">
     <div class="row">
         <div class="col-md-4">Question</div>
@@ -27,6 +22,6 @@
         <div class="col-md-4"><%= user_response.response %></div>
         <div class="col-md-4"><%= user_response.award %></div>
     </div>
-<% end %>  
+    <% end %>  
 </div>
 <% end %>
