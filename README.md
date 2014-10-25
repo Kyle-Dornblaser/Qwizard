@@ -1,4 +1,4 @@
-# Unnamed Team Awesome Project
+# QWIZARD
 
 ### TODO
 * Make the prototype
