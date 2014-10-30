@@ -7,9 +7,16 @@ class WelcomeController < ApplicationController
     end
     question_instance = QuestionInstance.last
 
-    if Time.now.to_f - question_instance.created_at.to_f > 20
+    question_age = Time.now.to_f - question_instance.created_at.to_f
+    if question_age > 20
       getCurrentQuestionInstance
+      # TODO have getCurrentQuestionInstance return an instance that we can use instead of another database call
+      question_instance = QuestionInstance.last
+      question_age = 0
     end
+    
+    
+   
 
     # TODO Refactor question type code
     question = Question.find(question_instance.question_id)
@@ -20,7 +27,8 @@ class WelcomeController < ApplicationController
     @currentQuestionInstance = {
         questionInstance: question_instance,
         question: question,
-        choices: choices
+        choices: choices,
+        questionAge: question_age.to_i
     }
 
     already_answered = false
