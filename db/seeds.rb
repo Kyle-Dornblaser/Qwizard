@@ -13,13 +13,13 @@ QuestionInstance.delete_all
 UserResponse.delete_all
 User.delete_all
 
-Difficulty.create(id: 1, points: 100)
-Difficulty.create(id: 2, points: 1000)
-Difficulty.create(id: 3, points: 10000)
-Difficulty.create(id: 4, points: 1000000)
+Difficulty.create!(:id => 1, :points => 100)
+Difficulty.create!(:id => 2, :points => 1000)
+Difficulty.create!(:id => 3, :points => 10000)
+Difficulty.create!(:id => 4, :points => 1000000)
 
-User.create!(:username => 'admin', :password => 'password', :password_confirmation => 'password', :email => 'admin@gmail.com', :avatar => '', :role => 'admin')
-User.create!(:username => 'test', :password => 'password', :password_confirmation => 'password', :email => 'test@gmail.com', :avatar => '', :role => 'user')
+User.create!(:id => 1, :username => 'admin', :password => 'password', :password_confirmation => 'password', :email => 'admin@gmail.com', :avatar => '', :role => 'admin')
+User.create!(:id => 2, :username => 'test', :password => 'password', :password_confirmation => 'password', :email => 'test@gmail.com', :avatar => '', :role => 'user')
 
 File.open("seed_data/questions.txt") do |questions|
     id_count = 0
@@ -36,3 +36,10 @@ File.open("seed_data/choices.txt") do |choices|
         Choice.create!(:choice => choice, :correct_choice => correct_choice, :question => Question.find_by_id(question))
   end
 end
+
+#Sets the next id in the sequence to the maximum id in the table
+connection = ActiveRecord::Base.connection
+connection.execute("SELECT setval('difficulties_id_seq', max(id)) FROM difficulties")
+connection.execute("SELECT setval('users_id_seq', max(id)) FROM users")
+connection.execute("SELECT setval('questions_id_seq', max(id)) FROM questions")
+connection.execute("SELECT setval('choices_id_seq', max(id)) FROM choices")
