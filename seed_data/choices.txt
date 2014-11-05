@@ -197,7 +197,7 @@ The Dark Knight|true|49
 Precious|false|50
 The Blind Side|true|50
 The Last Station|false|50
-Julie &amp; Julie|false|50
+Julie & Julie|false|50
 The Artist|false|51
 Midnight in Paris|false|51
 The Girl with the Dragon Tattoo|true|51
