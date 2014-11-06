@@ -1,4 +1,5 @@
 class WelcomeController < ApplicationController
+  layout "index"
 
   # GET /welcome
   def index
@@ -14,9 +15,6 @@ class WelcomeController < ApplicationController
       question_instance = QuestionInstance.last
       question_age = 0
     end
-    
-    
-   
 
     # TODO Refactor question type code
     question = Question.find(question_instance.question_id)

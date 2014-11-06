@@ -18,3 +18,6 @@
 
 # Ignore Ruby Mine files
 /.idea/
+
+# Ignore Linux tmp files
+*~
