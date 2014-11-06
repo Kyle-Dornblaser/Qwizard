@@ -1,4 +1,0 @@
-class DropQuestion < ActiveRecord::Migration
-  def change
-  end
-end
