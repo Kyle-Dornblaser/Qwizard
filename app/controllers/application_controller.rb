@@ -41,13 +41,14 @@ class ApplicationController < ActionController::Base
     question_instance = QuestionInstance.last
     question = Question.find(question_instance.question.id)
     difficulty = Difficulty.find(question.difficulty.id)
+    
     difficulty.points
   end
   
   def current_pool
     total = point_pool
     question_instance = QuestionInstance.last
-    responseTotal = UserResponse.where("question_instance_id =" + question_instance.id.to_s).count
+    responseTotal = UserResponse.where("question_instance_id =" + question_instance.id.to_s).sum(:award)
     
     pointsLeft = total - responseTotal
   end
