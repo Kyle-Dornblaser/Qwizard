@@ -1,5 +1,6 @@
 class ChoicesController < ApplicationController
   before_action :set_choice, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin
 
   # GET /choices
   # GET /choices.json
@@ -70,5 +71,11 @@ class ChoicesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def choice_params
       params.require(:choice).permit(:choice, :correct_choice, :question_id)
+    end
+    
+    def authenticate_admin
+      unless current_user && current_user.role == "admin"
+        redirect_to '/'
+      end
     end
 end

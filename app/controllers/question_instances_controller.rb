@@ -1,5 +1,6 @@
 class QuestionInstancesController < ApplicationController
   before_action :set_question_instance, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin
 
   # GET /question_instances
   # GET /question_instances.json
@@ -70,6 +71,12 @@ class QuestionInstancesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_instance_params
       params.require(:question_instance).permit(:question_id)
+    end
+    
+    def authenticate_admin
+      unless current_user && current_user.role == "admin"
+        redirect_to '/'
+      end
     end
 end
 
