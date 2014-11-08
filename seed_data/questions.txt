@@ -98,3 +98,92 @@
 1|The Vietnamese began a war for independence in 1946 against which country?|2|1
 1|Cambodia in 1975 was taken over by which group led by Pol Pot, leading to the rise of the 'Killing Fields'?|2|1
 1|Which country in Southeast Asia was the only country never colonised?|2|1
+3|What Hans Christian Andersen story has a monarch bamboozled by a tailor?|2|1
+3|What Emily Bronte novel features Heathcliff?|2|1
+3|What is the alternate title of the masterpiece painting La Giaconda?|2|1
+3|Who does Alice follow down the hole?|2|1
+3|What is the Spanish word for navy?|2|1
+3|What is the literary term for a play on words?|2|1
+3|What was the first part of J.R.R. Tolkien's Lord of the Rings trilogy?|2|1
+3|What book facilitated the ban of the pesticide DDT in 1972 in the U.S.?|2|1
+3|Who painted Self Portrait with Bandaged Ear?|2|1
+3|Who was King Lear's favorite daughter?|2|1
+3|What novel did Ian Fleming introduce James Bond in?|2|1
+3|What is the last word in the Bible?|2|1
+3|What adventure tale introduced: "Yo-ho-ho, and a bottle of rum!"|2|1
+3|Who was the fairy in Peter Pan?|2|1
+3|Who wrote Around the World in Eighty Days?|2|1
+3|What Hebrew word means "so be it"|2|1
+3|What does a bibliophile enjoy?|2|1
+3|Who was the first union president to occupy the Oval Office?|2|1
+3|What line divided the North and South in the U.S. Civil War?|2|1
+3|What started in 1849 when gold was discovered at Sutter's Mill?|2|1
+3|What U.S. state was once an independent republic?|2|1
+3|Who was the first U.S. billionaire?|2|1
+3|What ended the Austro-Hungarian monarchy?|2|1
+3|What was the first railroad to cross the US?|2|1
+3|What is the oldest university in the US?|2|1
+3|Which side did Britain support in the US Civil War?|2|1
+3|What is the first word of the text of the US Constitution?|2|1
+3|What does NATO stand for?|2|1
+3|What was World War I known as before World War II?|2|1
+3|What Egyptian city was founded by Alexander the Great in 331 BC?|2|1
+3|What chain did Ray Kroc build?|2|1
+3|Which is the only one of the Seven Wonders of the Ancient World still standing?|2|1
+3|What is the term for any four-sided figure?|2|1
+3|How many daily tides are there?|2|1
+3|How many sides does a decagon have?|2|1
+3|How many sides does a hexagon have?|2|1
+3|What date did man first land on the moon?|2|1
+3|How many wings does a bee have?|2|1
+3|What is added to water to make tonic water?|2|1
+3|What do you call the feeling of having experienced something before?|2|1
+3|What do you call an animal that eats both plants and animals?|2|1
+3|What is 70 percent of 70?|2|1
+3|What is 11 squared?|2|1
+3|Who said: "We are more popular than Jesus"?|2|1
+3|Which TV show features a character nicknamed Sweet Dee?|2|1
+3|What popular artist sang the words: "I'm afraid of Americans"?|2|1
+3|What popular Walt Disney character shares a name with a planet?|2|1
+3|Who directed the movie The Godfather?|2|1
+3|Which famous director is the daughter of Francis Ford Coppola?|2|1
+3|Who directed the movie Apocalypse Now?|2|1
+3|Who directed 2001: A Space Odyssey?|2|1
+3|Who is C3-PO's sidekick?|2|1
+3|What is the leading female singer in an opera called?|2|1
+3|Who was the commander of the Starship Enterprise?|2|1
+3|Who created the popular cartoon TV show "The Simpson"?|2|1
+3|Who created the cartoon TV show "Futurama"?|2|1
+3|Who directed Raiders of the Lost Ark?|2|1
+3|What is the model name and number of the spacecraft's computer in 2001: A Space Odyssey?|2|1
+3|What is the secret identity of Don Vito Corleone?|2|1
+3|What was the only color Johny Cash wore on stage?|2|1
+3|What is the world's widest river?|2|1
+3|What is the second largest continent?|2|1
+3|Which country is the largest in the World?|2|1
+3|What is the second largest country in the World?|2|1
+3|What Russian city boasts the Hermitage Museum?|2|1
+3|Which is colder, the North or South Pole?|2|1
+3|What is the largest city in Alaska?|2|1
+3|What tropic passes through Australia?|2|1
+3|What is the only US state that borders a Canadian territory?|2|1
+3|What is the former name of Istanbul?|2|1
+3|Where is Pennsylvania Station?|2|1
+3|What South American city does an 82 foot statue of Christ overlook?|2|1
+3|What is the northernmost Scandinavian country?|2|1
+3|What is the most sacred river of India?|2|1
+3|What is a kartoffel in Hamburg?|2|1
+3|Where is Lake Como?|2|1
+3|What river flows through the Grand Canyon?|2|1
+3|Where is the International Court of Justice?|2|1
+3|What volcanic peak can you see from Naples?|2|1
+3|What is the better-known name of the card game Twenty-One?|2|1
+3|What Canadian city is Mill Street beer brewed in?|2|1
+3|Who was said to float like a butterfly and sting like a bee?|2|1
+3|Which is heavier, a baseball or a softball?|2|1
+3|What do you get when you mix tequila, triple sec and lime juice?|2|1
+3|What do you get when you mix whiskey, sweet vermouth and angostura bitters?|2|1
+3|How many numbered, colored balls are there in the standard billiards?|2|1
+3|How many referees are there in a soccer game?|2|1
+3|When did seat belts become a mandatory equipment on US cars?|2|1
+3|How many colored squares are there on a Rubik's Cube?|2|1
