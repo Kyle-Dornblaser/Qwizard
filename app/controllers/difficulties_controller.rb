@@ -1,5 +1,6 @@
 class DifficultiesController < ApplicationController
   before_action :set_difficulty, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin
 
   # GET /difficulties
   # GET /difficulties.json
@@ -70,5 +71,11 @@ class DifficultiesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def difficulty_params
       params.require(:difficulty).permit(:points)
+    end
+    
+    def authenticate_admin
+      unless current_user && current_user.role == "admin"
+        redirect_to '/'
+      end
     end
 end

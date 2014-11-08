@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
     @current_users ||= User.find(session[:user_id]) if session[:user_id]
   end
 
-   def getCurrentQuestionInstance
+  def getCurrentQuestionInstance
     # For the prototype, the current question instance will always create a new question instance
     question_instance = QuestionInstance.new
     randomQuestionId = Random.rand(Question.count) + 1
@@ -27,7 +27,6 @@ class ApplicationController < ActionController::Base
   end
   
   def percentage_correct
-    
     correct = UserResponse.where("user_id =" + current_user.id.to_s).where("award > 0").count
     total = UserResponse.where("user_id =" + current_user.id.to_s).count
     if (total == 0)
@@ -36,6 +35,22 @@ class ApplicationController < ActionController::Base
         percentage = (correct.to_f / total.to_f) * 100
     end
     percentage.to_i
+  end
+  
+  def point_pool
+    question_instance = QuestionInstance.last
+    question = Question.find(question_instance.question.id)
+    difficulty = Difficulty.find(question.difficulty.id)
+    
+    difficulty.points
+  end
+  
+  def current_pool
+    total = point_pool
+    question_instance = QuestionInstance.last
+    responseTotal = UserResponse.where("question_instance_id =" + question_instance.id.to_s).sum(:award)
+    
+    pointsLeft = total - responseTotal
   end
 
 end

@@ -1,5 +1,6 @@
 class UserResponsesController < ApplicationController
   before_action :set_user_response, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin, except: [:evaluateResponse]
 
   # GET /user_responses
   # GET /user_responses.json
@@ -109,5 +110,11 @@ class UserResponsesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_response_params
       params.require(:user_response).permit(:response, :award, :question_instance_id, :user_id)
+    end
+    
+    def authenticate_admin
+      unless current_user && current_user.role == "admin"
+        redirect_to '/'
+      end
     end
 end

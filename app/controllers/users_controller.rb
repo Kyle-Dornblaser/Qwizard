@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin, except: [:signup, :create]
 
   # GET /users
   # GET /users.json
@@ -77,5 +78,11 @@ class UsersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:username, :password, :password_confirmation, :salt, :email, :avatar, :role)
+    end
+    
+    def authenticate_admin
+      unless current_user && current_user.role == "admin"
+        redirect_to '/'
+      end
     end
 end
