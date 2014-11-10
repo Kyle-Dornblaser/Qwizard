@@ -74,19 +74,17 @@ class UserResponsesController < ApplicationController
       end
     else
       # TODO Get question type and have the method for that question type evaluate the response
-      choices = Choice.where(:question_id => @user_response.question_instance.question_id)
-      correct_response = ''
-      choices.each do |choice|
-        if choice.correct_choice
-          correct_response = choice
-        end
-      end
-      if @user_response.response == correct_response.choice
-        @user_response.award = (current_pool * 0.26).ceil
-        msg = "Correct"
-      else
-        @user_response.award = 0
-        msg = "Incorrect"
+      question = Question.find(@user_response.question_instance.question_id)
+      
+      # call methods related to question_type
+      case question.question_type
+      when 1
+        msg = evaluate_multiple_choice
+      when 2
+        msg = evaluate_multiple_select
+      when 3
+        msg = evaluate_short_answer
+      else msg = "INCORRECT"
       end
 
       respond_to do |format|
@@ -98,6 +96,79 @@ class UserResponsesController < ApplicationController
           format.json { render json: @user_response.errors, status: :unprocessable_entity }
         end
       end
+    end
+  end
+
+  def evaluate_multiple_choice
+    choices = Choice.where(:question_id => @user_response.question_instance.question_id)
+    correct_response = ''
+    choices.each do |choice|
+      if choice.correct_choice
+        correct_response = choice
+      end
+    end
+    
+    if @user_response.response == correct_response.choice
+      @user_response.award = (current_pool * 0.26).ceil
+      "Correct!!"
+    else
+      @user_response.award = 0
+      "INCORRECT"
+    end
+  end
+  
+  def evaluate_multiple_select
+    choices = Choice.where(:question_id => @user_response.question_instance.question_id)
+    all_correct = true #boolean for whether the user's checks are all correct and not missing a correct choice
+    
+    #params[:checked_answers] is an array of all the checkboxes the user selected; it does not include unchecked boxes
+    choices.each do |choice|
+        if (choice.correct_choice)
+            if !(params[:checked_answers].include? choice.choice)
+                all_correct = false
+            end
+        else
+            if (params[:checked_answers].include? choice.choice)
+                all_correct = false
+            end
+        end
+    end
+    
+    #Sets the user's response, each choice delineated by vertical bars (|)
+    checked_responses = ""
+    params[:checked_answers].length.times do |i|
+        checked_responses += params[:checked_answers][i]
+        if i < params[:checked_answers].length - 1
+            checked_responses += "|"
+        end
+    end
+    @user_response.response = checked_responses
+    
+    if (all_correct)
+        @user_response.award = (current_pool * 0.26).ceil
+        "CORRECTTTTTT"
+    else
+        @user_response.award = 0
+        "WROOOOONG"
+    end
+  end
+  
+  def evaluate_short_answer
+    choices = Choice.where(:question_id => @user_response.question_instance.question_id)
+    correct_answer = true
+    choices.each do |choice|
+        if (params[:short_ans].casecmp choice.choice) != 0
+            correct_answer = false
+        end
+    end
+    
+    @user_response.response = params[:short_ans]
+    if correct_answer
+        @user_response.award = (current_pool * 0.26).ceil
+        "YESSSSSS"
+    else
+        @user_response.award = 0
+        "NOOOOOOOO"
     end
   end
 

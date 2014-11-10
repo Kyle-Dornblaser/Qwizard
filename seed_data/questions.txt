@@ -187,3 +187,4 @@
 3|How many referees are there in a soccer game?|2|1
 3|When did seat belts become a mandatory equipment on US cars?|2|1
 3|How many colored squares are there on a Rubik's Cube?|2|1
+2|What are the colors of the American flag?|2|1

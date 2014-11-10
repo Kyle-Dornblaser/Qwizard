@@ -487,3 +487,10 @@ Fifteen|true|186
 One|true|187
 1968|true|188
 54|true|189
+Red|true|190
+Green|false|190
+Black|false|190
+Blue|true|190
+White|true|190
+Orange|false|190
+Pink|false|190
