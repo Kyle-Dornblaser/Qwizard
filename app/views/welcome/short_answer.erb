@@ -11,4 +11,8 @@
 	<div class="form-group">
         <%= f.submit 'Submit', :class => "btn btn-primary" %>
     </div>
+    <% if current_user && current_user.role == 'admin' %>
+        Answer (admin only):
+        <%= @currentQuestionInstance[:choices][0].choice %>
+    <% end %>
 <% end %>
