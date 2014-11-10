@@ -82,7 +82,7 @@ class UserResponsesController < ApplicationController
         end
       end
       if @user_response.response == correct_response.choice
-        @user_response.award = 1
+        @user_response.award = (current_pool * 0.26).ceil
         msg = "Correct"
       else
         @user_response.award = 0
