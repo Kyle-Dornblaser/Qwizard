@@ -34,9 +34,9 @@ class WelcomeController < ApplicationController
 
     already_answered = false
     if current_user
-      if UserResponse.find_by_question_instance_id_and_user_id(question_instance.id, current_user.id)
-        render "already_answered"
-        already_answered = true
+      if UserResponse.where(question_instance_id: question_instance.id).where(user_id: current_user).where(correct: true).count > 0 || UserResponse.where(question_instance_id: question_instance.id).where(user_id: current_user).count >= Question.find(question_instance.question_id).attempts
+          render "already_answered"
+          already_answered = true
       end
     end
 
