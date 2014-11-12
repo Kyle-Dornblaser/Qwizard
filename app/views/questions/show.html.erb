@@ -1,8 +1,14 @@
 <p id="notice"><%= notice %></p>
+<p>
+  <strong>Question ID:</strong>
+  <%= @question.id %>
+</p>
 
 <p>
   <strong>Question type:</strong>
-  <%= @question.question_type %>
+  <%= @question.question_type == 1 ? "Multiple Choice" : ""  %>
+  <%= @question.question_type == 2 ? "Multiple Select" : "" %>
+  <%= @question.question_type == 3 ? "Short Answer" : ""%>
 </p>
 
 <p>
@@ -17,8 +23,35 @@
 
 <p>
   <strong>Difficulty:</strong>
-  <%= @question.difficulty %>
+  <%= @question.difficulty.id %>
 </p>
 
 <%= link_to 'Edit', edit_question_path(@question) %> |
 <%= link_to 'Back', questions_path %>
+<br>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>Choice</th>
+      <th>Correct choice</th>
+      <th>Question</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <% @choices.each do |choice| %>
+      <tr>
+        <td><%= choice.choice %></td>
+        <td><%= choice.correct_choice %></td>
+        <td><%= choice.question.id %></td>
+        <td><%= link_to 'Show', choice %></td>
+        <td><%= link_to 'Edit', edit_choice_path(choice) %></td>
+        <td><%= link_to 'Destroy', choice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<%= link_to 'New Choice', new_choice_path %>

@@ -14,7 +14,11 @@
   <tbody>
     <% @questions.each do |question| %>
       <tr>
-        <td><%= question.question_type %></td>
+        <td>
+          <%= question.question_type == 1 ? "Multiple Choice" : ""  %>
+          <%= question.question_type == 2 ? "Multiple Select" : "" %>
+          <%= question.question_type == 3 ? "Short Answer" : ""%>
+        </td>
         <td><%= question.question %></td>
         <td><%= question.attempts %></td>
         <td><%= question.difficulty.id %></td>
