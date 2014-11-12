@@ -398,3 +398,99 @@ Laos|false|100
 Burma|false|100
 Thailand|true|100
 Indonesia|false|100
+The Emperor's New Clothes|true|101
+Wuthering Heights|true|102
+The Mona Lisa|true|103
+The White Rabbit|true|104
+Armada|true|105
+Pun|true|106
+The Fellowship of the Ring|true|107
+Silent Spring|true|108
+Vincent Van Gogh|true|109
+Cordelia|true|110
+Casion Royale|true|111
+Amen|true|112
+Treasure Island|true|113
+Tinkerbelle|true|114
+Jules Verne|true|115
+Amen|true|116
+Books|true|117
+Ronald Reagan|true|118
+The Mason-Dixon line|true|119
+The California Gold Rush|true|120
+Texas|true|121
+John D. Rockerfeller|true|122
+World War I|true|123
+The Union Pacific|true|124
+Harvard|true|125
+The Confederacy|true|126
+We|true|127
+North Atlantic Treaty Organization|true|128
+The Great War|true|129
+Alexandria|true|130
+McDonald's|true|131
+The Great Pyramid of Khufu|true|132
+Quadrilateral|true|133
+Two|true|134
+Ten|true|135
+Six|true|136
+July 20, 1969|true|137
+Four|true|138
+Quinine|true|139
+Deja vu|true|140
+An Omnivore|true|141
+49|true|142
+121|true|143
+John Lennon|true|144
+It's Always Sunny in Philadelphia|true|145
+David Bowie|true|146
+Pluto|true|147
+Francis Ford Coppola|true|148
+Sophia Coppola|true|149
+Francis Ford Coppola|true|150
+Stanley Kubrik|true|151
+R2-D2|true|152
+The Prima Donna|true|153
+Captain James T. Kirk|true|154
+Matt Groening|true|155
+Matt Groening|true|156
+Steven Spielberg|true|157
+HAL 9000|true|158
+The Godfather|true|159
+Black|true|160
+The Amazon|true|161
+Africa|true|162
+Russia|true|163
+Canada|true|164
+St. Petersburg|true|165
+The South Pole|true|166
+Anchorage|true|167
+The Tropic of Capricorn|true|168
+Alaska|true|169
+Constantinople|true|170
+New York City|true|171
+Rio de Janeiro|true|172
+Norway|true|173
+The Ganges|true|174
+A potato|true|175
+Italy|true|176
+The Colorado River|true|177
+The Hague|true|178
+Mount Vesuvius|true|179
+Blackjack|true|180
+Toronto|true|181
+Muhammad Ali|true|182
+A softball|true|183
+A Margarita|true|184
+A Manhattan|true|185
+Fifteen|true|186
+One|true|187
+1968|true|188
+54|true|189
+Red|true|190
+Green|false|190
+Black|false|190
+Blue|true|190
+White|true|190
+Orange|false|190
+Pink|false|190

@@ -1,33 +1,36 @@
 <% content_for :content do %>
 <div class="row">
-	<div class="col-md-8 col-md-offset-4">
-		<div class="your-clock"></div>
-	    <script type="text/javascript">
-	    	var diff = 60 - <%= @currentQuestionInstance[:questionAge] %>;
-				var clock = $('.your-clock').FlipClock(diff, {
-					countdown: true,
-					clockFace: 'MinuteCounter',
-					callbacks: {
-		        	stop: function() {
-		        		location.reload();
-		        	}
-		        }
-				});
-				
-				if (clock.getTime() == 0) {
-					location.reload();
-				}
-	    </script>
-	</div>
-</div>
-<div class="row">
 	<div class="col-md-8">
 	    <h3><%= @currentQuestionInstance[:question].question %></h3>
 	    <%= yield %>
 	</div>
 	<div class="col-md-4">
-		<h4>Total Points: <%= @totalPoints %></h4>
-		<h4>Total Points Left: <%= @totalPointsLeft %></h4>
+		<div class="your-clock"></div>
+    <script type="text/javascript">
+    	var diff = 60 - <%= @currentQuestionInstance[:questionAge] %>;
+			var clock = $('.your-clock').FlipClock(diff, {
+				countdown: true,
+				clockFace: 'MinuteCounter',
+				callbacks: {
+	        	stop: function() {
+	        		location.reload();
+	        	}
+	        }
+			});
+			
+			if (clock.getTime() == 0) {
+				location.reload();
+			}
+    </script>
+    <div class="row">
+    	<div class="col-md-12">
+		    <h6 class="pull-left">Points Left: <%= @totalPointsLeft %></h6>
+				<h6 class="pull-right">Total Points: <%= @totalPoints %></h6>
+			</div>
+		</div>
+		<div class="progress progress-striped active">
+		  <div class="progress-bar" style="width: <%= (@totalPointsLeft.to_f / @totalPoints.to_f) * 100.0 %>%"></div>
+		</div>
 	</div>
 </div>
 <% end %>
