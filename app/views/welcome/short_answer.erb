@@ -1,7 +1,7 @@
 <% @user_response = UserResponse.new %>
 <%= form_for @user_response, :url => evaluate_response_path, :method => :post do |f| %>
     <div class="form-group">
-	    <%= f.text_field :response, :name => "short_ans" %>
+	    <%= f.text_field :response, :name => "short_ans", :required => true %>
     </div>
     <% if current_user %>
         <input id="user_response_user_id" name="user_response[user_id]" type="hidden" value='<%= current_user.id %>' />
