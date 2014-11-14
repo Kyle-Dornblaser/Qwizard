@@ -14,3 +14,14 @@
         <%= f.submit 'Submit', :class => "btn btn-primary" %>
     </div>
 <% end %>
+
+<p>
+<% if current_user && current_user.role == 'admin' %>
+        Answer (admin only):
+        <% @currentQuestionInstance[:choices].each do |choice| %>
+            <% if choice.correct_choice %>
+                <%= choice.choice %>
+            <% end %>
+        <% end %>
+<% end %>
+</p>
