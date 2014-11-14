@@ -2,7 +2,7 @@
 <%= form_for @user_response, :url => evaluate_response_path, :method => :post do |f| %>
     <div class="form-group" style="padding-left: 25px">
         <% @currentQuestionInstance[:choices].each do |choice| %>
-	        <div class="checkbox"> <%= check_box_tag 'checked_answers[]', choice.choice %> <%= choice.choice %></div>
+	        <div class="checkbox"> <%= check_box_tag 'checked_answers[]', choice.choice, :required => true %> <%= choice.choice %></div>
         <% end %>
     </div>
     <% if current_user %>
