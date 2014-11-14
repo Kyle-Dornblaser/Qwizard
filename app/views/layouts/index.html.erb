@@ -31,6 +31,19 @@
 		<div class="progress progress-striped active">
 		  <div class="progress-bar" style="width: <%= (@totalPointsLeft.to_f / @totalPoints.to_f) * 100.0 %>%"></div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Leaderboard</h2>
+				<ul class="list-group">
+					<% question_leaderboard.each do |user| %>
+				  <li class="list-group-item">
+				    <span class="badge"><%= user.award %></span>
+				    <%= user.username %>
+				  </li>
+				  <% end %>
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>
 <% end %>
