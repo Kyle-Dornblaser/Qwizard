@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
-  has_many :userresponses
-  has_many :questioninstances, through: :userresponses
+  has_many :user_responses
+  has_many :questioninstances, through: :user_responses
   
   before_save :encrypt_password
   

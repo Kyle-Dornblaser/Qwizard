@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  helper_method :current_user, :getCurrentQuestionInstance, :percentage_correct, :total_points
+  helper_method :current_user, :getCurrentQuestionInstance, :percentage_correct, :total_points, :question_leaderboard
   
   private
 
@@ -27,6 +27,11 @@ class ApplicationController < ActionController::Base
     }
   end
   
+  def question_leaderboard
+    question_instance = QuestionInstance.last
+    users = User.select("users.*, user_responses.*").joins(:user_responses).where("question_instance_id =" + question_instance.id.to_s).order('user_responses.award DESC')
+  end
+  
   def percentage_correct
     correct = UserResponse.where("user_id =" + current_user.id.to_s).where("award > 0").count
     total = UserResponse.where("user_id =" + current_user.id.to_s).count
@@ -35,6 +40,7 @@ class ApplicationController < ActionController::Base
     else
         percentage = (correct.to_f / total.to_f) * 100
     end
+    
     percentage.to_i
   end
   
