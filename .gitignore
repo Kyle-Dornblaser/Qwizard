@@ -21,3 +21,6 @@
 
 # Ignore Linux tmp files
 *~
+
+# Ignore c9 files
+/.c9/

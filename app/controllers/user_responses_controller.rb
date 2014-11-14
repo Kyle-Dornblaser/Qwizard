@@ -72,6 +72,10 @@ class UserResponsesController < ApplicationController
       respond_to do |format|
         format.html { redirect_to signup_url, notice: "Must be logged in participate" }
       end
+    elsif UserResponse.where(question_instance_id: @user_response.question_instance_id).where(user_id: @user_response.user).where(correct: true).count > 0 || UserResponse.where(question_instance_id: @user_response.question_instance_id).where(user_id: @user_response.user).count >= Question.find(@user_response.question_instance.question_id).attempts
+      respond_to do |format|
+        format.html { redirect_to root_url, notice: "You have already answered this question." }
+      end
     else
       # TODO Get question type and have the method for that question type evaluate the response
       question = Question.find(@user_response.question_instance.question_id)
@@ -110,9 +114,11 @@ class UserResponsesController < ApplicationController
     
     if @user_response.response == correct_response.choice
       @user_response.award = (current_pool * 0.26).ceil
+      @user_response.correct = true
       "Correct!!"
     else
       @user_response.award = 0
+      @user_response.correct = false
       "INCORRECT"
     end
   end
@@ -146,9 +152,11 @@ class UserResponsesController < ApplicationController
     
     if (all_correct)
         @user_response.award = (current_pool * 0.26).ceil
+        @user_response.correct = true
         "CORRECTTTTTT"
     else
         @user_response.award = 0
+        @user_response.correct = false
         "WROOOOONG"
     end
   end
@@ -165,9 +173,11 @@ class UserResponsesController < ApplicationController
     @user_response.response = params[:short_ans]
     if correct_answer
         @user_response.award = (current_pool * 0.26).ceil
+        @user_response.correct = true
         "YESSSSSS"
     else
         @user_response.award = 0
+        @user_response.correct = false
         "NOOOOOOOO"
     end
   end

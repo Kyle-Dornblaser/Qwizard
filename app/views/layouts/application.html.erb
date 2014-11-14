@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>Team Awesome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag 'application' %>
-  <link rel="stylesheet" href="http://bootswatch.com/paper/bootstrap.min.css">
+  <%= stylesheet_link_tag 'bootstrap' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <%= csrf_meta_tags %>
@@ -21,8 +22,7 @@
       </div>
       <div class="navbar-collapse collapse navbar-inverse-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><%= link_to "Home", root_path %></li>
-          <li><a href="#">Link</a></li>
+          <li><%= link_to "Home", root_path %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
 	        <% if current_user %>
