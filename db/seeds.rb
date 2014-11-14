@@ -13,10 +13,10 @@ QuestionInstance.delete_all
 UserResponse.delete_all
 User.delete_all
 
-Difficulty.create!(:id => 1, :points => 100)
+Difficulty.create!(:id => 1, :points => 500)
 Difficulty.create!(:id => 2, :points => 1000)
-Difficulty.create!(:id => 3, :points => 10000)
-Difficulty.create!(:id => 4, :points => 1000000)
+Difficulty.create!(:id => 3, :points => 2500)
+Difficulty.create!(:id => 4, :points => 5000)
 
 User.create!(:id => 1, :username => 'admin', :password => 'password', :password_confirmation => 'password', :email => 'admin@gmail.com', :avatar => '', :role => 'admin')
 User.create!(:id => 2, :username => 'test', :password => 'password', :password_confirmation => 'password', :email => 'test@gmail.com', :avatar => '', :role => 'user')
