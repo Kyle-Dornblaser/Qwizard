@@ -72,7 +72,7 @@ class UserResponsesController < ApplicationController
       respond_to do |format|
         format.html { redirect_to signup_url, notice: "Must be logged in participate" }
       end
-    elsif @user_response.response.to_s.empty?
+    elsif params[:short_ans] && params[:short_ans].empty?
       respond_to do |format|
         format.html { redirect_to root_url, notice: "You need to submit something." }
       end
