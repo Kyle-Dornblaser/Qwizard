@@ -4,12 +4,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   helper_method :current_user, :getCurrentQuestionInstance, :percentage_correct, :total_points
+  
   private
 
   def current_user
     @current_users ||= User.find(session[:user_id]) if session[:user_id]
   end
-
+  
   def getCurrentQuestionInstance
     # For the prototype, the current question instance will always create a new question instance
     question_instance = QuestionInstance.new

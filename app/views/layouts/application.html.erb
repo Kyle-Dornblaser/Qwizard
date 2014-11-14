@@ -27,6 +27,7 @@
         <ul class="nav navbar-nav navbar-right">
 	        <% if current_user %>
 	          <% if current_user.role == 'admin' %>
+	          <li><a href="/new">New Question Instance</a></li>
 	          <li><a href="#">Admin</a></li>
 	          <% end %>
 		      <li><a href="#"><%= total_points %> Points</a></li>

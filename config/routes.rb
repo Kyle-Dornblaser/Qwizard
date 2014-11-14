@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   post '/signup', to: 'users#create', as: 'signup_create'
   post '/evaluate_response', to: 'user_responses#evaluateResponse', as: 'evaluate_response'
   root 'welcome#index'
+  get  '/new', to: 'welcome#newQuestionInstance', as: 'new_question_instance_helper'
+  
 
   scope '/admin' do
     scope '/difficulties' do
