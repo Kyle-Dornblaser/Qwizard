@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   post '/evaluate_response', to: 'user_responses#evaluateResponse', as: 'evaluate_response'
   root 'welcome#index'
   get  '/new', to: 'welcome#newQuestionInstance', as: 'new_question_instance_helper'
-  
 
   scope '/admin' do
+    get '/', to: 'admin#index'
     scope '/difficulties' do
       get '/', to: 'difficulties#index', as: 'difficulties'
       get '/new', to: 'difficulties#new', as: 'new_difficulty'
