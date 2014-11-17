@@ -28,7 +28,7 @@
 	        <% if current_user %>
 	          <% if current_user.role == 'admin' %>
 	          <li><a href="/new">New Question Instance</a></li>
-	          <li><a href="#">Admin</a></li>
+	          <li><a href="/admin">Admin</a></li>
 	          <% end %>
 	          <li><%= link_to total_points.to_s + " Points", profile_path %></li>
 		      <li class="dropdown">
