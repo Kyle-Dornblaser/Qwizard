@@ -29,7 +29,9 @@ class ApplicationController < ActionController::Base
   
   def question_leaderboard
     question_instance = QuestionInstance.last
-    users = User.select("users.*, user_responses.*").joins(:user_responses).where("question_instance_id =" + question_instance.id.to_s).order('user_responses.award DESC')
+    query = "SELECT users.username, MAX(user_responses.award) AS award FROM users JOIN user_responses ON users.id = user_responses.user_id WHERE question_instance_id = " + question_instance.id.to_s + " GROUP BY users.username ORDER BY MAX(user_responses.award) DESC"
+    results = ActiveRecord::Base.connection.execute(query);
+    #users = User.select("users.username, user_responses.award").joins(:user_responses).where("question_instance_id =" + question_instance.id.to_s).group("users.username").maximum("user_responses.award").order('user_responses.award DESC')
   end
   
   def percentage_correct

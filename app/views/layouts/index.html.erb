@@ -33,13 +33,18 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
+				<%= question_leaderboard.inspect %>
 				<h2>Leaderboard</h2>
 				<ul class="list-group">
-					<% question_leaderboard.each do |user| %>
-				  <li class="list-group-item">
-				    <span class="badge"><%= user.award %></span>
-				    <%= user.username %>
-				  </li>
+					<% if question_leaderboard.ntuples.zero? %>
+						<li class="list-group-item">No one has answered yet</li>
+					<% else %>
+						<% question_leaderboard.each do |user| %>
+					  <li class="list-group-item">
+					    <span class="badge"><%= user["award"] %></span>
+					    <%= user["username"] %>
+					  </li>
+					  <% end %>
 				  <% end %>
 				</ul>
 			</div>
