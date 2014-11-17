@@ -51,4 +51,13 @@ class WelcomeController < ApplicationController
     end
     
   end
+  
+  def newQuestionInstance
+    if current_user && current_user.role == "admin"
+      getCurrentQuestionInstance
+      redirect_to root_url
+    else
+      redirect_to '/'
+    end
+  end
 end

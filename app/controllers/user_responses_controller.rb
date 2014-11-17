@@ -72,6 +72,10 @@ class UserResponsesController < ApplicationController
       respond_to do |format|
         format.html { redirect_to signup_url, notice: "Must be logged in participate" }
       end
+    elsif params[:short_ans] && params[:short_ans].empty?
+      respond_to do |format|
+        format.html { redirect_to root_url, notice: "You need to submit something." }
+      end
     elsif UserResponse.where(question_instance_id: @user_response.question_instance_id).where(user_id: @user_response.user).where(correct: true).count > 0 || UserResponse.where(question_instance_id: @user_response.question_instance_id).where(user_id: @user_response.user).count >= Question.find(@user_response.question_instance.question_id).attempts
       respond_to do |format|
         format.html { redirect_to root_url, notice: "You have already answered this question." }

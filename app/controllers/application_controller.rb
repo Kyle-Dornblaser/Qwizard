@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   def current_user
     @current_users ||= User.find(session[:user_id]) if session[:user_id]
   end
-
+  
   def getCurrentQuestionInstance
     # For the prototype, the current question instance will always create a new question instance
     question_instance = QuestionInstance.new
