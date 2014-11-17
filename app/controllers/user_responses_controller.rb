@@ -167,10 +167,10 @@ class UserResponsesController < ApplicationController
   
   def evaluate_short_answer
     choices = Choice.where(:question_id => @user_response.question_instance.question_id)
-    correct_answer = true
+    correct_answer = false
     choices.each do |choice|
-        if (params[:short_ans].casecmp choice.choice) != 0
-            correct_answer = false
+        if(params[:short_ans].casecmp choice.choice) == 0
+            correct_answer = true
         end
     end
     
