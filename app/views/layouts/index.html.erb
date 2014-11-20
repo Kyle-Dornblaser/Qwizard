@@ -1,8 +1,17 @@
 <% content_for :content do %>
 <div class="row">
 	<div class="col-md-8">
+		
+			<% flash.each do |name, msg| %>
+	    <div class="alert alert-dismissable alert-<%= name %>">
+	      <button type="button" class="close" data-dismiss="alert">×</button>
+	      <%= content_tag :span, msg, :id => "flash_#{name}" %>
+	    </div>
+	    <% end %>
+	    
 	    <h3><%= @currentQuestionInstance[:question].question %></h3>
 	    <%= yield %>
+	    
 	</div>
 	<div class="col-md-4">
 		<div class="your-clock"></div>
