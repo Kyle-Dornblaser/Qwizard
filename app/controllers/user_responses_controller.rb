@@ -92,12 +92,12 @@ class UserResponsesController < ApplicationController
         msg = evaluate_multiple_select
       when 3
         msg = evaluate_short_answer
-      else msg = "INCORRECT"
+      else msg = "Incorrect!"
       end
 
       respond_to do |format|
         if @user_response.save
-          format.html { redirect_to root_url, notice: msg }
+          format.html { redirect_to root_url }
           format.json { render :show, status: :created, location: @user_response }
         else
           format.html { render :new }
@@ -119,11 +119,11 @@ class UserResponsesController < ApplicationController
     if @user_response.response == correct_response.choice
       @user_response.award = (current_pool * 0.26).ceil
       @user_response.correct = true
-      "Correct!!"
+      flash[:success] = "Correct!"
     else
       @user_response.award = 0
       @user_response.correct = false
-      "INCORRECT"
+      flash[:danger] = "Incorrect!"
     end
   end
   
@@ -157,11 +157,11 @@ class UserResponsesController < ApplicationController
     if (all_correct)
         @user_response.award = (current_pool * 0.26).ceil
         @user_response.correct = true
-        "CORRECTTTTTT"
+        flash[:success] = "Correct!"
     else
         @user_response.award = 0
         @user_response.correct = false
-        "WROOOOONG"
+        flash[:danger] = "Incorrect!"
     end
   end
   
@@ -178,11 +178,11 @@ class UserResponsesController < ApplicationController
     if correct_answer
         @user_response.award = (current_pool * 0.26).ceil
         @user_response.correct = true
-        "YESSSSSS"
+        flash[:success] = "Correct!"
     else
         @user_response.award = 0
         @user_response.correct = false
-        "NOOOOOOOO"
+        flash[:danger] = "Incorrect!"
     end
   end
 

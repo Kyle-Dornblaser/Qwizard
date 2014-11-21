@@ -48,13 +48,6 @@
       </div>
     </div>
 
-    <% flash.each do |name, msg| %>
-    <div class="alert alert-dismissable alert-info">
-      <button type="button" class="close" data-dismiss="alert">×</button>
-      <%= content_tag :span, msg, :id => "flash_#{name}" %>
-    </div>
-    <% end %>
-
     <%= content_for?(:content) ? yield(:content) : yield %>
 
   </div>    
