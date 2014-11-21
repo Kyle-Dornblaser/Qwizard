@@ -1,0 +1,42 @@
+<div id="leaderboard_wrapper">
+     <div id="leaderboard_main_panel">
+          <h3> Top 10 Points Leaderboard </h3>
+          <br />
+          <table class="leaderboard_content" cellspacing="0">
+               <tr>
+                    <th class="leaderboard_member_name"> Member </th>
+                    <th class="leaderboard_member_point"> Points </th>
+               </tr>
+               
+               <% generate_top_leaderboard.each do |user_rank| %>
+                    <tr>
+                    <td class="leaderboard_member_name"> <%= user_rank["user_name"] %> </td>
+                    <td class="leaderboard_member_point"> <%= user_rank["award"] %> </td>
+                    </tr>
+               <% end %>
+               
+          </table>
+          <br /><br /><br /><br />
+          <hr />
+          <h3> Top 10 Points This Week </h3>
+          <br />
+          <table class="leaderboard_content" cellspacing="0">
+               <tr>
+                    <th class="leaderboard_member_name"> Member </th>
+                    <th class="leaderboard_member_point"> Points </th>
+               </tr>
+               
+               <% generate_168_leaderboard.each do |user_rank| %>
+                    <tr>
+                    <td class="leaderboard_member_name"> <%= user_rank["user_name"] %> </td>
+                    <td class="leaderboard_member_point"> <%= user_rank["award"] %> </td>
+                    </tr>
+               <% end %>
+             
+          </table>
+          <br />
+          <br />
+          <br />
+          <br />
+     </div>
+</div>

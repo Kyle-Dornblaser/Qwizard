@@ -71,7 +71,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
 
 
-
+get "leaderboard", to: "leaderboard#show_leaderboard", as: "leaderboard"
 get "logout", to: "sessions#destroy", as: "logout"
 get "login", to: "sessions#new", as: "login"
 get "signup", to: "users#signup", as: "signup"
