@@ -5,7 +5,7 @@
 </div>
 <% end %>
 
-<h1>Signup</h1>
+<h1>Sign Up</h1>
 
 <%= form_for @user, :url => signup_create_path, :method => :post do |f| %>
     <% if @user.errors.any? %>
@@ -34,5 +34,5 @@
       <%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation %>
     </p>
-    <p class="button"><%= f.submit 'Signup', :class=> 'btn btn-primary' %></p>
+    <p class="button"><%= f.submit 'Sign Up', :class=> 'btn btn-primary' %></p>
 <% end %>
