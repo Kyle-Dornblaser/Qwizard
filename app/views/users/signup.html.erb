@@ -1,3 +1,10 @@
+<% flash.each do |name, msg| %>
+<div class="alert alert-dismissable alert-<%= name %>">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <%= content_tag :span, msg, :id => "flash_#{name}" %>
+</div>
+<% end %>
+
 <h1>Signup</h1>
 
 <%= form_for @user, :url => signup_create_path, :method => :post do |f| %>
@@ -29,6 +36,3 @@
     </p>
     <p class="button"><%= f.submit 'Signup', :class=> 'btn btn-primary' %></p>
 <% end %>
-
-
-
