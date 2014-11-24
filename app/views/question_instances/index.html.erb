@@ -1,6 +1,6 @@
 <h1>Listing question_instances</h1>
 
-<table>
+<table class="table table-striped table-hover">
   <thead>
     <tr>
       <th>Question</th>
@@ -11,7 +11,7 @@
   <tbody>
     <% @question_instances.each do |question_instance| %>
       <tr>
-        <td><%= question_instance.question %></td>
+        <td><%= question_instance.question.id %></td>
         <td><%= link_to 'Show', question_instance %></td>
         <td><%= link_to 'Edit', edit_question_instance_path(question_instance) %></td>
         <td><%= link_to 'Destroy', question_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>

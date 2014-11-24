@@ -1,6 +1,6 @@
 <h1>Listing choices</h1>
 
-<table>
+<table class="table table-striped table-hover">
   <thead>
     <tr>
       <th>Choice</th>
@@ -15,7 +15,7 @@
       <tr>
         <td><%= choice.choice %></td>
         <td><%= choice.correct_choice %></td>
-        <td><%= choice.question %></td>
+        <td><%= choice.question.id %></td>
         <td><%= link_to 'Show', choice %></td>
         <td><%= link_to 'Edit', edit_choice_path(choice) %></td>
         <td><%= link_to 'Destroy', choice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
