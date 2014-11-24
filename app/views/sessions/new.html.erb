@@ -1,3 +1,10 @@
+<% flash.each do |name, msg| %>
+<div class="alert alert-dismissable alert-<%= name %>">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <%= content_tag :span, msg, :id => "flash_#{name}" %>
+</div>
+<% end %>
+
 <h1>Log in</h1>
 
 <%= form_tag sessions_path do %>

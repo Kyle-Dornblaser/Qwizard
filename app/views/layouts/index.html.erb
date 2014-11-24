@@ -9,6 +9,17 @@
 	    </div>
 	    <% end %>
 	    
+    	<div class="col-md-6">
+			  <h6>Question Type:
+		    	<%= @currentQuestionInstance[:question].question_type == 1 ? "Multiple Choice" : ""  %>
+	        <%= @currentQuestionInstance[:question].question_type == 2 ? "Multiple Select" : "" %>
+	        <%= @currentQuestionInstance[:question].question_type == 3 ? "Short Answer" : ""%>
+	      </h6>
+      </div>
+      <div class="col-md-6">
+      	<h6>Attempts: <%= @currentQuestionInstance[:question].attempts %></h6>
+      </div>
+			
 	    <h3><%= @currentQuestionInstance[:question].question %></h3>
 	    <%= yield %>
 	    
