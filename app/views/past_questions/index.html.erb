@@ -1,21 +1,14 @@
-<h1>Listing past_questions</h1>
+<h1>Past Questions</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Question</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @past_questions.each do |past_question| %>
-        <tr>
-            <td><%= past_question.question %></td>
-            <td><%= link_to 'Show', past_question_path(past_question) %></td>
-        </tr>
-    <% end %>
-  </tbody>
-</table>
+<ol>
+<% @past_questions.each do |past_question| %>
+    <li>
+        <% if past_question.id == @current_question.id %>
+            CURRENT QUESTION:
+        <% end %>
+        <%= link_to past_question.question.question, past_question_path(past_question) %>
+    </li>
+<% end %>
+</ol>
 
 <br>

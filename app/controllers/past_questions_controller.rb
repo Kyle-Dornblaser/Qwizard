@@ -4,7 +4,7 @@ class PastQuestionsController < ApplicationController
     
     # GET /past
     def index
-        @past_questions = QuestionInstance.all
+        @past_questions = QuestionInstance.order('id DESC')
         @current_question = QuestionInstance.last
     end
     
