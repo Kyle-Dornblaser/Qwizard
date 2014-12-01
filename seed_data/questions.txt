@@ -1,19 +1,19 @@
 1|How many continents exist on our planet?|2|1
 1|What is the longest river in the Americas?|2|1
-1|What is the longest river in the world?|2|1
+1|What is the longest river in the world?|3|1
 1|What is the largest country in the world?|2|1
-1|What is the smallest country in the world?|2|1
+1|What is the smallest country in the world?|1|1
 1|Which is the largest ocean in the world?|2|1
 1|How many oceans exist on our planet?|2|1
 1|Which country has the largest population in the world?|2|1
 1|The highest mountain in the world, Mt. Everest, is located on the border of which two countries?|2|1
 1|What is the largest desert in the world?|2|1
 1|Louisiana Voodoo, also known as New Orleans Voodoo, has its roots in which African country?|2|1
-1|Another major source of Voodoo in Louisiana was?|2|1
+1|Another major source of Voodoo in Louisiana was?|4|1
 1|What is one of the most important items in New Orleans Voodoo?|2|1
 1|Many practices from which religion were incorporated into New Orleans Voodoo?|2|1
 1|Who was one of the most famous Voodoo Queens of New Orleans, still revered to this day?|2|1
-1|Followers of Louisiana Voodoo believe in which of the following?|2|1
+1|Followers of Louisiana Voodoo believe in which of the following?|3|1
 1|Voodoo and Hoodoo (traditional African folk magic) have mixed in New Orleans. What is a lock of female hair supposed to bring?|2|1
 1|Which of the choices below is not worshiped in Voodoo?|2|1
 1|The Creole Phase of New Orleans Voodoo began around which year?|2|1
@@ -24,7 +24,7 @@
 1|Pokemon, one of the most popular and well known anime characters, was created by Stoshi Tajiri in which year?|2|1
 1|Which hit Anime film premiered in Japan in 1996, starring Kenshiro as the main character?|2|1
 1|Which year was the American adaptation of Digimon: The Movie released?|2|1
-1|Which 1993 anime hit set in Feudal Japan involved the Yamashiro Clan?|2|1
+1|Which 1993 anime hit set in Feudal Japan involved the Yamashiro Clan?|1|1
 1|Manga is another term used for anime, but often more specifically refers to what?|2|1
 1|It's common in anime for a character to pull their lower eyelid down to taunt someone. What is this called?|2|1
 1|The practice of dressing up like anime characters in Japan is called?|2|1
@@ -34,12 +34,12 @@
 1|The largest meat eating dinosaur was the|2|1
 1|How long did adult Velociraptors grow to?|2|1
 1|The Amphicoelias could grow up to how long?|2|1
-1|In which region did the Tyrannosaurus roam?|2|1
+1|In which region did the Tyrannosaurus roam?|3|1
 1|In which region did the Spinosaurus roam?|2|1
 1|In what region did the Giganotosaurus roam?|2|1
 1|The extinction of the dinosaurs is most commonly believed to have been cause by what event?|2|1
 1|Which 2000 movie staring Russell Crowe won Oscars for Best Picture and Best Actor?|2|1
-1|Which actor stared in the 2001 Best Picture film about a mathematician?|2|1
+1|Which actor stared in the 2001 Best Picture film about a mathematician?|1|1
 1|What was one of the top movies of 2002, starring Leonardo DiCaprio and Tom Hanks?|2|1
 1|Which movie won the Oscar for Best Picture in 2003?|2|1
 1|Which very popular movie in 2004 did Kate Winslet star in?|2|1
@@ -62,21 +62,21 @@
 1|Which personality disorder is characterized by elaborate personal fantasies and a complete lack of desire to maintain relationships?|2|1
 1|Which personality disorder is characterized by extreme mood changes, unstable relationships, and periods of dissociation?|2|1
 1|Which personality disorder is characterized by very strange thinking and behavoir along with uncommon beliefs?|2|1
-1|Which personality disorder is characterized by excessive thoughts personal power, vanity, and image?|2|1
+1|Which personality disorder is characterized by excessive thoughts personal power, vanity, and image?|3|1
 1|Which personality disorder is characterized by a strong need for approval along with inappropriate seductive behavior?|2|1
 1|Which personality disorder is characterized by an extreme desire for order, perfection, and control?|2|1
 1|Which personality disorder is characterized by extreme suspicion of others?|2|1
 1|Which personality disorder is characterized by a pattern of disregard for and violation of the rights of others?|2|1
 1|Which personality disorder is characterized by an extreme dependence on others?|2|1
 1|In what year was the Declaration of Independence written?|2|1
-1|At the time of the Declaration of Independence, how many "colonies" existed in the newly formed United States?|2|1
+1|At the time of the Declaration of Independence, how many "colonies" existed in the newly formed United States?|1|1
 1|Which country gave the colonies support against the British?|2|1
 1|Which year was the US Constitution written?|2|1
 1|In which year were the Confederate States of America formed to allow the continued use of slavery in the South?|2|1
 1|In what year were women given the right to vote in the United States?|2|1
 1|In which year did the United States enter World War I?|2|1
 1|In what year did the Great Depression begin?|2|1
-1|In which year did Japan attack the United States, leading to American entry into World War II?|2|1
+1|In which year did Japan attack the United States, leading to American entry into World War II?|1|1
 1|In which year was the War on Terror declared?|2|1
 1|In what year was the Roman Republic created?|2|1
 1|In which year did Constantine I move the capital of the Roman Republic from Rome to Constantinople?|2|1
@@ -90,7 +90,7 @@
 1|The collapse of the Iron Curtain occured in?|2|1
 1|The oldest written Chinese documents date back to the Shang Dynasty in which period?|2|1
 1|China's great Dynasties began to break up during the Warring States peiod.  When was the Warring States Period?|2|1
-1|It was during the Asuka period that Japan became a recognizable state. When was this period?|2|1
+1|It was during the Asuka period that Japan became a recognizable state. When was this period?|1|1
 1|The feudal period of Japan began with the Kamakrua period, when state control was decentralized and ruled by various lords called daimyo. When was this period?|2|1
 1|The Meiji Restoratio or Meiji period in Japan marked the end of feudal society, the advent of nationalism, and the invasion of several countries. In what year during the Meiji period did Japan first invade China?|2|1
 1|The first European country to colonize Southeast Asia was?|2|1
@@ -100,7 +100,7 @@
 1|Which country in Southeast Asia was the only country never colonised?|2|1
 3|What Hans Christian Andersen story has a monarch bamboozled by a tailor?|2|1
 3|What Emily Bronte novel features Heathcliff?|2|1
-3|What is the alternate title of the masterpiece painting La Giaconda?|2|1
+3|What is the alternate title of the masterpiece painting La Giaconda?|3|1
 3|Who does Alice follow down the hole?|2|1
 3|What is the Spanish word for navy?|2|1
 3|What is the literary term for a play on words?|2|1
@@ -111,7 +111,7 @@
 3|What novel did Ian Fleming introduce James Bond in?|2|1
 3|What is the last word in the Bible?|2|1
 3|What adventure tale introduced: "Yo-ho-ho, and a bottle of rum!"|2|1
-3|Who was the fairy in Peter Pan?|2|1
+3|Who was the fairy in Peter Pan?|4|1
 3|Who wrote Around the World in Eighty Days?|2|1
 3|What Hebrew word means "so be it"|2|1
 3|What does a bibliophile enjoy?|2|1
@@ -129,7 +129,7 @@
 3|What was World War I known as before World War II?|2|1
 3|What Egyptian city was founded by Alexander the Great in 331 BC?|2|1
 3|What chain did Ray Kroc build?|2|1
-3|Which is the only one of the Seven Wonders of the Ancient World still standing?|2|1
+3|Which is the only one of the Seven Wonders of the Ancient World still standing?|1|1
 3|What is the term for any four-sided figure?|2|1
 3|How many daily tides are there?|2|1
 3|How many sides does a decagon have?|2|1
@@ -144,7 +144,7 @@
 3|Who said: "We are more popular than Jesus"?|2|1
 3|Which TV show features a character nicknamed Sweet Dee?|2|1
 3|What popular artist sang the words: "I'm afraid of Americans"?|2|1
-3|What popular Walt Disney character shares a name with a planet?|2|1
+3|What popular Walt Disney character shares a name with a planet?|1|1
 3|Who directed the movie The Godfather?|2|1
 3|Which famous director is the daughter of Francis Ford Coppola?|2|1
 3|Who directed the movie Apocalypse Now?|2|1
@@ -152,12 +152,12 @@
 3|Who is C3-PO's sidekick?|2|1
 3|What is the leading female singer in an opera called?|2|1
 3|Who was the commander of the Starship Enterprise?|2|1
-3|Who created the popular cartoon TV show "The Simpson"?|2|1
+3|Who created the popular cartoon TV show "The Simpson"?|1|1
 3|Who created the cartoon TV show "Futurama"?|2|1
 3|Who directed Raiders of the Lost Ark?|2|1
 3|What is the model name and number of the spacecraft's computer in 2001: A Space Odyssey?|2|1
 3|What is the secret identity of Don Vito Corleone?|2|1
-3|What was the only color Johny Cash wore on stage?|2|1
+3|What was the only color Johny Cash wore on stage?|4|1
 3|What is the world's widest river?|2|1
 3|What is the second largest continent?|2|1
 3|Which country is the largest in the World?|2|1
