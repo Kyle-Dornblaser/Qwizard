@@ -548,4 +548,10 @@ Blue|true|190
 White|true|190
 Orange|false|190
 Pink|false|190
-blank|true|999
+$26,000|true|191
+$28,000|true|191
+$29,000|false|191
+$30,000|false|191
+$31,000|false|191
+$32,000|false|191
+$34,000|false|191
