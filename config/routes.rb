@@ -77,6 +77,11 @@ get "login", to: "sessions#new", as: "login"
 get "signup", to: "users#signup", as: "signup"
 get "profile", to: "profile#index", as: "profile"
 
+scope '/past' do
+    get '/', to: 'past_questions#index', as: 'past_questions'
+    get '/:id', to: 'past_questions#show', as: 'past_question'
+end
+
 resources :sessions
 
 end
