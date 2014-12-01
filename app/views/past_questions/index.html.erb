@@ -12,7 +12,7 @@
     <% @past_questions.each do |past_question| %>
         <tr>
             <td><%= past_question.question %></td>
-            <td><%= link_to 'Show', past_question %></td>
+            <td><%= link_to 'Show', past_question_path(past_question) %></td>
         </tr>
     <% end %>
   </tbody>

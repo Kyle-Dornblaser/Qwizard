@@ -8,6 +8,12 @@ class PastQuestionsController < ApplicationController
         @current_question = QuestionInstance.last
     end
     
+    def show
+        
+        @question = Question.find(set_past_question.question_id)
+        @choices = Choice.where(:question_id => @question.id)
+    end
+    
     private
         # Use callbacks to share common setup or constraints between actions.
         def set_past_question
