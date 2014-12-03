@@ -3,16 +3,17 @@
 
 <h3>Question Leaderboard</h3>
 <ul class="list-group">
-					<% if question_leaderboard.ntuples.zero? %>
-						<li class="list-group-item">No one has answered yet</li>
-					<% else %>
-						<% question_leaderboard.each do |user| %>
-					  <li class="list-group-item">
-					    <span class="badge"><%= user["award"] %></span>
-					    <%= user["username"] %>
-					  </li>
-					  <% end %>
-				  <% end %>
+ <% leaderboard = past_question_leaderboard(@past_question_instance) %>
+ <% if leaderboard.ntuples.zero? %>
+   <li class="list-group-item">No one has answered yet</li>
+ <% else %>
+   <% leaderboard.each do |user| %>
+   <li class="list-group-item">
+     <span class="badge"><%= user["award"] %></span>
+     <%= user["username"] %>
+   </li>
+   <% end %>
+ <% end %>
 </ul>
 
 
