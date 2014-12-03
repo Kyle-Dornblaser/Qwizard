@@ -1,0 +1,12 @@
+.leaderboard_contentz tr td, .leaderboard_contentz tr th
+{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+.leaderboard_contentz tr td
+{
+    border-top:1px solid black;
+}

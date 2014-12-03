@@ -3,7 +3,9 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  helper_method :current_user, :getCurrentQuestionInstance, :percentage_correct, :total_points, :question_leaderboard
+  helper_method :current_user, :getCurrentQuestionInstance, :percentage_correct, :total_points, :question_leaderboard, :question_percent_correct, :piece_of_shit
+  
+  
   
   private
 
@@ -36,6 +38,32 @@ class ApplicationController < ActionController::Base
              GROUP BY users.username 
              ORDER BY MAX(user_responses.award) DESC"
     results = ActiveRecord::Base.connection.execute(query);
+  end
+  
+  def question_percent_correct
+    #question_instance = QuestionInstance.last
+    #num_correct = UserResponse.where("question_instance_id = " + question_instance.question_id.to_s + "").where("correct IS TRUE").count
+    #total_num = UserResponse.where("question_instance_id = " + question_instance.question_id.to_s + "").count
+    question_instance = QuestionInstance.last
+    query = "SELECT COUNT(user_responses.correct IS TRUE)+1 AS num_correct, COUNT(user_responses.correct)+1 AS total_num, (COUNT(user_responses.correct IS TRUE)/(COUNT(user_responses.correct)+1))*100 as q_percentage_correct
+            FROM user_responses JOIN question_instances ON user_responses.question_instance_id = question_instances.id 
+            WHERE question_instances.question_id = " + question_instance.question_id.to_s + ""
+    results = ActiveRecord::Base.connection.execute(query).to_s;
+    #q_percentage_correct = ((num_correct.to_f / total_num.to_f) * 100).to_s
+  end
+  
+  def piece_of_shit
+    question_instance = QuestionInstance.last
+    #query = "SELECT (COUNT(correct IS TRUE)/(COUNT(correct)+1))*100 as nomzz
+            #FROM user_responses 
+            #WHERE question_instance_id IN (SELECT id 
+                                          #FROM question_instances 
+                                          #WHERE question_id = " + question_instance.question_id.to_s + ")"
+    query = "SELECT question_instance_id AS nomzz
+            FROM user_responses
+            WHERE question_instance_id = " + question_instance.id.to_s + ""
+    
+    results = ActiveRecord::Base.connection.execute(query).to_s;
   end
   
   def percentage_correct
